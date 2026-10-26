@@ -43,16 +43,16 @@ My focus is on strengthening my skills in Linux, networking, Git, cloud platform
 **Legend:** ✅ Complete | 🔥 In progress | 🔒 Not started
 
 ```text
-OVERALL PROGRESS   ▰▰▰▰▰▱▱▱▱▱▱▱▱▱   5 / 14 modules started
+OVERALL PROGRESS   ▰▰▱▱▱▱▱▱▱▱▱▱▱▱   2 / 14 modules started
 ```
 
 | Level | Week | Mission | Status | Progress |
 |:---:|:---:|---|:---:|:---:|
-| 🌐 | 00 | **Internet & Networking Basics** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
-| 🧠 | 01 | **Success Mindset** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
-| 🤖 | 02 | **Agentic AI** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🌐 | 00 | **Internet & Networking Basics** | ✅ | `▰▰▰▰▰▰▰▰▰▰` |
+| 🧠 | 01 | **Success Mindset** | ✅ | `▰▰▰▰▰▰▰▰▰▰` |
+| 🤖 | 02 | **Agentic AI** | 🔒 | `▰▰▰▱▱▱▱▱▱▱` |
 | 🐧 | 03 | **Linux & Bash for DevOps** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
-| 🌿 | 04 | **Git & GitHub** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🌿 | 04 | **Git & GitHub** | 🔒 | `▰▰▰▱▱▱▱▱▱▱` |
 | ♾️ | 05 | **DevOps Lifecycle** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
 | ☁️ | 06 | **AWS Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
 | 🔷 | 07 | **Azure Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
