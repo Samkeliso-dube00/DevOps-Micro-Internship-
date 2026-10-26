@@ -3,9 +3,9 @@
 
   <img src="https://img.shields.io/badge/🚀_DEVOPS-MICRO_INTERNSHIP-6C63FF?style=for-the-badge&labelColor=161B22" alt="DevOps Micro Internship" />
 
-  <br/><br/>
-
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Learning journey typing animation" />
+  <p>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&height=40&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Learning journey typing animation" />
+  </p>
 
   <p>
     <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
@@ -48,7 +48,7 @@ OVERALL PROGRESS   ▰▰▱▱▱▱▱▱▱▱▱▱▱▱   2 / 14 modules s
 
 | Level | Week | Mission | Status | Progress |
 |:---:|:---:|---|:---:|:---:|
-| 🌐 | 00 | **Internet & Networking Basics** | ✅ | `▰▰▰▰▰▰▰▰▰▰` |
+| 🌐 | 00 | **Internet & Networking Basics** | 🔥 | `▰▰▰▰▰▰▰▰▰▰` |
 | 🧠 | 01 | **Success Mindset** | ✅ | `▰▰▰▰▰▰▰▰▰▰` |
 | 🤖 | 02 | **Agentic AI** | 🔒 | `▰▰▰▱▱▱▱▱▱▱` |
 | 🐧 | 03 | **Linux & Bash for DevOps** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
@@ -147,7 +147,7 @@ This learning journey is part of the **DevOps Micro Internship (DMI)** programme
   <a href="https://www.linkedin.com/in/samkeliso-dube03/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://github.com/Samkeliso-Dube">
+  <a href="https://github.com/Samkeliso-dube00">
     <img src="https://img.shields.io/badge/GitHub-Follow-24292F?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://dev.to/samkeliso_dube">
@@ -169,5 +169,3 @@ This learning journey is part of the **DevOps Micro Internship (DMI)** programme
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" alt="Footer banner" />
-
-</escape>```
