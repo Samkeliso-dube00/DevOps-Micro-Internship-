@@ -1,23 +1,24 @@
- <div align="center">
 
 <div align="center">
+
   <img src="https://img.shields.io/badge/🚀_DEVOPS-MICRO_INTERNSHIP-6C63FF?style=for-the-badge&labelColor=161B22" alt="DevOps Micro Internship" />
-</div>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Typing animation" />
+  <br/><br/>
 
-<p>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
-<img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
-<img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
-<img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-</p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Learning journey typing animation" />
+
+  <p>
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+    <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+    <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
+    <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
+    <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+    <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  </p>
 
 </div>
 
@@ -27,7 +28,7 @@
 
 Hi, I'm **Samkeliso Dube**, a Cloud Engineering graduate building practical skills in DevOps and cloud technologies.
 
-I'm using this repository to document my hands-on learning journey through the **DevOps Micro Internship (DMI)**. I believe in learning by doing: understanding concepts, working through real technical challenges, troubleshooting errors, and documenting what I learn along the way.
+I'm using this repository to document my hands-on learning journey through the **DevOps Micro Internship (DMI)**. I believe in learning by doing: understanding concepts, working through technical challenges, troubleshooting errors, and documenting what I learn along the way.
 
 My focus is on strengthening my skills in Linux, networking, Git, cloud platforms, Infrastructure as Code, automation, and containerisation.
 
@@ -64,27 +65,6 @@ OVERALL PROGRESS   ▰▰▰▰▰▱▱▱▱▱▱▱▱▱   5 / 14 modules s
 
 ---
 
-## 🔁 My Learning Loop
-
-```mermaid
-flowchart TD
-    A["📖 Understand the concept"] --> B["🛠️ Do the lab"]
-    B --> C{"💥 Did it break?"}
-    C -- Yes --> D["🔍 Troubleshoot"]
-    D --> E["📝 Document the fix"]
-    C -- No --> E
-    E --> F["📣 Share the milestone"]
-    F --> A
-```
-
-1. **Understand** the concept before touching the keyboard.
-2. **Practise** through hands-on exercises and assignments.
-3. **Troubleshoot** errors and document how I resolve them.
-4. **Record** what I did, what I learned, and issues faced.
-5. **Share** selected milestones and projects as I progress.
-
----
-
 ## 📂 Repository Structure
 
 ```text
@@ -106,7 +86,7 @@ DevOps-Micro-Internship/
 ```
 
 <details>
-<summary><b>📁 What's inside each week folder?</b></summary>
+<summary><strong>📁 What's inside each week folder?</strong></summary>
 
 ```text
 week-XX-topic/
@@ -153,7 +133,7 @@ This learning journey is part of the **DevOps Micro Internship (DMI)** programme
 
 | Resource | Link |
 |---|---|
-| 🌍 DMI Official Website | [dmi.pravinmishra.com](https://dmi.pravinmishra.com/) |
+| 🌍 DMI Official Website | [DMI Website](https://dmi.pravinmishra.com/) |
 | 🎓 DMI University | [DMI University](https://university.pravinmishra.com/) |
 | ✍️ DMI Blog | [DMI Blog](https://dmi.pravinmishra.com/blog) |
 | ▶️ DMI YouTube Playlist | [Watch on YouTube](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho) |
@@ -161,30 +141,33 @@ This learning journey is part of the **DevOps Micro Internship (DMI)** programme
 
 ---
 
-<div align="center">
+## 🤝 Let's Connect
 
-<a href="https://www.linkedin.com/in/samkeliso-dube03/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
-</a>
-
-<a href="https://github.com/Samkeliso-dube00">
-<img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub" />
-</a>
-
-<a href="https://dev.to/samkeliso_dube">
-<img src="https://img.shields.io/badge/Dev.to-Read%20My%20Blogs-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="Read my blogs on Dev.to" />
-</a>
-
-<a href="https://medium.com/@lainnecoatzee">
-  <img src="https://img.shields.io/badge/Medium-Read%20My%20Stories-795548?style=for-the-badge&logo=medium&logoColor=white" alt="Read my stories on Medium" />
-</a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/samkeliso-dube03/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/Samkeliso-Dube">
+    <img src="https://img.shields.io/badge/GitHub-Follow-24292F?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://dev.to/samkeliso_dube">
+    <img src="https://img.shields.io/badge/Dev.to-Read%20My%20Blogs-111111?style=flat-square&logo=devdotto&logoColor=white" alt="Dev.to" />
+  </a>
+  <a href="https://medium.com/@lainnecoatzee">
+    <img src="https://img.shields.io/badge/Medium-Read%20My%20Stories-795548?style=flat-square&logo=medium&logoColor=white" alt="Medium" />
+  </a>
+</p>
 
 <br/>
 
-**⭐ This repository documents my learning, practical work, and growth throughout the DMI programme. ⭐**
+<p align="center">
+  <strong>⭐ This repository documents my learning, practical work, and growth throughout the DMI programme. ⭐</strong>
+</p>
 
-*If you're on a similar journey, feel free to star the repository and say hi!*
+<p align="center">
+  <em>If you're on a similar journey, feel free to star the repository and say hi!</em>
+</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" alt="Footer banner" />
 
-</div>
+</escape>```
