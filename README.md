@@ -1,168 +1,190 @@
-# DevOps Micro Internship with Agentic AI — My Journey
+ <div align="center">
 
-![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
-![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-0%2F14-green?style=for-the-badge)
+<div align="center">
+  <img src="https://img.shields.io/badge/🚀_DEVOPS-MICRO_INTERNSHIP-6C63FF?style=for-the-badge&labelColor=161B22" alt="DevOps Micro Internship" />
+</div>
 
-> 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
-> Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Typing animation" />
+
+<p>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+<img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+</p>
+
+</div>
 
 ---
 
-## About Me
+## 👩🏽‍💻 About Me
 
-| | |
-|---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+Hi, I'm **Samkeliso Dube**, a Cloud Engineering graduate building practical skills in DevOps and cloud technologies.
+
+I'm using this repository to document my hands-on learning journey through the **DevOps Micro Internship (DMI)**. I believe in learning by doing: understanding concepts, working through real technical challenges, troubleshooting errors, and documenting what I learn along the way.
+
+My focus is on strengthening my skills in Linux, networking, Git, cloud platforms, Infrastructure as Code, automation, and containerisation.
+
+**My approach:** Learn the fundamentals. Practise consistently. Troubleshoot with purpose. Document the process. Keep improving.
 
 ---
 
-## About the Program
+## 🎛️ Mission Control
 
-**DevOps Micro Internship with Agentic AI** is a 14-week mentor-led cohort program by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) — Cloud, DevOps & AI consultant with 15+ years of experience, 5,000+ learners trained, and 26K+ LinkedIn followers.
+> My learning progress dashboard. I update it as I go.
 
-This is not a course. It is an internship-style program — real deployments, real pipelines, real evidence reviewed by mentors every week.
+**Legend:** ✅ Complete | 🔥 In progress | 🔒 Not started
 
-- 🌐 Program Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
-- 📺 YouTube: [Pravin Mishra](https://www.youtube.com/@awswithpravinmishra)
-- 🔗 Instructor: [LinkedIn](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
+```text
+OVERALL PROGRESS   ▰▰▰▰▰▱▱▱▱▱▱▱▱▱   5 / 14 modules started
+```
+
+| Level | Week | Mission | Status | Progress |
+|:---:|:---:|---|:---:|:---:|
+| 🌐 | 00 | **Internet & Networking Basics** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🧠 | 01 | **Success Mindset** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🤖 | 02 | **Agentic AI** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🐧 | 03 | **Linux & Bash for DevOps** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| 🌿 | 04 | **Git & GitHub** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
+| ♾️ | 05 | **DevOps Lifecycle** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| ☁️ | 06 | **AWS Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| 🔷 | 07 | **Azure Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| 🏗️ | 08 | **Terraform** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| ⚙️ | 09 | **Ansible** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| 🚦 | 10 | **Azure DevOps** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| 🐳 | 11 | **Docker** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| ☸️ | 12 | **Kubernetes** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+| 👑 | 13 | **Final Project** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+
+---
+
+## 🔁 My Learning Loop
+
+```mermaid
+flowchart TD
+    A["📖 Understand the concept"] --> B["🛠️ Do the lab"]
+    B --> C{"💥 Did it break?"}
+    C -- Yes --> D["🔍 Troubleshoot"]
+    D --> E["📝 Document the fix"]
+    C -- No --> E
+    E --> F["📣 Share the milestone"]
+    F --> A
+```
+
+1. **Understand** the concept before touching the keyboard.
+2. **Practise** through hands-on exercises and assignments.
+3. **Troubleshoot** errors and document how I resolve them.
+4. **Record** what I did, what I learned, and issues faced.
+5. **Share** selected milestones and projects as I progress.
+
+---
+
+## 📂 Repository Structure
+
+```text
+DevOps-Micro-Internship/
+├── week-00-internet-and-networking/
+├── week-01-success-mindset/
+├── week-02-agentic-ai/
+├── week-03-linux-and-bash-for-devops/
+├── week-04-git-and-github/
+├── week-05-devops-lifecycle/
+├── week-06-aws-cloud/
+├── week-07-azure-cloud/
+├── week-08-terraform/
+├── week-09-ansible/
+├── week-10-azure-devops/
+├── week-11-docker/
+├── week-12-kubernetes/
+└── week-13-final-project/
+```
+
+<details>
+<summary><b>📁 What's inside each week folder?</b></summary>
+
+```text
+week-XX-topic/
+├── README.md
+├── notes/
+├── assignments/
+├── screenshots/
+└── troubleshooting.md
+```
+
+</details>
+
+---
+
+## 🪦 The Bug Graveyard
+
+> Every error I encounter is an opportunity to learn. I record the problem, identify the root cause, and document the fix.
+
+| Week | What broke | Root cause | The fix |
+|:---:|---|---|---|
+| 00 | Add an actual issue | Identify the cause | Document the solution |
+| 03 | Add an actual issue | Identify the cause | Document the solution |
+| 04 | Add an actual issue | Identify the cause | Document the solution |
 
 ---
 
 ## 🏆 Achievements
 
-### Champion of the Week
-
-<!-- If you were named Champion of the Week, add the badge below and link to your LinkedIn post -->
-
-| Week | Award | Post |
-|------|-------|------|
-| <!-- e.g. Week 03 --> | <!-- 🏆 Champion of the Week --> | <!-- [LinkedIn Post](#) --> |
-
-### Leaderboard
-
-<!-- Add your cohort leaderboard rank here as you progress -->
-
-> 🥇 Cohort 3 Rank: **#__** <!-- Update this each week -->
+- [x] 🚀 Started the DMI programme
+- [x] 📦 Created my learning repository
+- [ ] 🐧 Wrote my first Bash automation script
+- [ ] 🌿 Opened my first pull request
+- [ ] ☁️ Deployed my first cloud resource
+- [ ] 🏗️ Provisioned infrastructure with Terraform
+- [ ] 🐳 Containerised an application
+- [ ] ☸️ Ran a workload on Kubernetes
+- [ ] 👑 Completed my final project
 
 ---
 
-## My DevOps Stack
+## 🙏 Acknowledgements
 
-*Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
+This learning journey is part of the **DevOps Micro Internship (DMI)** programme associated with Pravin Mishra and The CloudAdvisory.
 
-*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
-
-**Preview — what your full stack looks like:**
-
-[![Week 00](./badges/week-00.svg)](./week-00-internet-and-networking/)[![Week 01](./badges/week-01.svg)](./week-01-success-mindset/)[![Week 02](./badges/week-02.svg)](./week-02-agentic-ai/)[![Week 03](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)[![Week 04](./badges/week-04.svg)](./week-04-git-and-github/)[![Week 05](./badges/week-05.svg)](./week-05-devops-lifecycle/)[![Week 06](./badges/week-06.svg)](./week-06-aws-cloud/)[![Week 07](./badges/week-07.svg)](./week-07-azure-cloud/)[![Week 08](./badges/week-08.svg)](./week-08-terraform/)[![Week 09](./badges/week-09.svg)](./week-09-ansible/)[![Week 10](./badges/week-10.svg)](./week-10-azure-devops/)[![Week 11](./badges/week-11.svg)](./week-11-docker/)[![Week 12](./badges/week-12.svg)](./week-12-kubernetes/)[![Week 13](./badges/week-13.svg)](./week-13-final-project/)
-
----
-
-**Your stack (uncomment each badge as you earn it):**
-
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
-
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
-
-<!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
-
-<!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
-
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
-
-<!-- Week 05 → DevOps Lifecycle & Agile -->
-<!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
-
-<!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
-
-<!-- Week 07 → Azure Cloud -->
-<!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
-
-<!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
-
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
-
-<!-- Week 10 → Azure DevOps CI/CD -->
-<!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
-
-<!-- Week 11 → Docker -->
-<!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
-
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
-
-<!-- Week 13 → Final Project / Capstone -->
-<!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
-
-*Complete a week → uncomment the badge → watch your stack grow.*
+| Resource | Link |
+|---|---|
+| 🌍 DMI Official Website | [dmi.pravinmishra.com](https://dmi.pravinmishra.com/) |
+| 🎓 DMI University | [DMI University](https://university.pravinmishra.com/) |
+| ✍️ DMI Blog | [DMI Blog](https://dmi.pravinmishra.com/blog) |
+| ▶️ DMI YouTube Playlist | [Watch on YouTube](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho) |
+| 💼 Pravin Mishra | [LinkedIn](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
 
 ---
 
-## Program Overview
+<div align="center">
 
-| Phase | Weeks | Focus |
-|-------|-------|-------|
-| Foundation | 00 – 02 | Networking, Mindset, Agentic AI |
-| Core DevOps | 03 – 05 | Linux & Bash, Git, DevOps Lifecycle |
-| Cloud | 06 – 07 | AWS & Azure Real Deployments |
-| Automation | 08 – 10 | Terraform, Ansible, CI/CD |
-| Containers | 11 – 12 | Docker & Kubernetes |
-| Capstone | 13 | Final Project |
+<a href="https://www.linkedin.com/in/samkeliso-dube03/">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
+</a>
 
----
+<a href="https://github.com/Samkeliso-dube00">
+<img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub" />
+</a>
 
-## Weekly Progress
+<a href="https://dev.to/samkeliso_dube">
+<img src="https://img.shields.io/badge/Dev.to-Read%20My%20Blogs-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="Read my blogs on Dev.to" />
+</a>
 
-| Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
-|------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
+<a href="https://medium.com/@lainnecoatzee">
+  <img src="https://img.shields.io/badge/Medium-Read%20My%20Stories-795548?style=for-the-badge&logo=medium&logoColor=white" alt="Read my stories on Medium" />
+</a>
 
-**Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
-**Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved
+<br/>
 
----
+**⭐ This repository documents my learning, practical work, and growth throughout the DMI programme. ⭐**
 
-## Certificate of Completion
+*If you're on a similar journey, feel free to star the repository and say hi!*
 
-*Awarded upon completing Week 13 — Final Project.*
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" alt="Footer banner" />
 
-<!-- Drop your certificate image here -->
-
----
-
-## Connect
-
-If you found this repo useful or want to follow my DevOps journey:
-
-- ⭐ Star this repo
-- 🔗 Connect with me on [LinkedIn](#)
-- 🌐 Learn more about the program: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
-- 💬 Join the community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+</div>
