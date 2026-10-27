@@ -1,6 +1,5 @@
+
 # Week 00 - Internet and Networking
-
-
 
 ---
 
@@ -18,23 +17,24 @@ Write a clear ChatGPT prompt to help you understand:
 
 Take a screenshot of your interaction showing:
 
-* Your detailed prompt (with clear expectations)
-* ChatGPT's simplified response with an example
+- Your detailed prompt (with clear expectations)
+- ChatGPT's simplified response with an example
 
 ## Screenshot
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Task 1 Prompt](screenshots/task_1_promt.png)
 
+**Response**
 
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
+![Task 1 Response](screenshots/task_1_response.png)
 
 ---
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that ChatGPT can help me understand DevOps concepts by breaking complex topics into simple, manageable steps. I also learned how to ask clear questions to get more useful explanations and practical examples.
 
 ---
 
@@ -50,16 +50,22 @@ He asked you to explain how users globally can access his website hosted in Finl
 
 Write a short explanation (**100–150 words**) that includes:
 
-* Packet Switching
-* IP Address
-* TCP/IP
-* HTTP/HTTPS
+- Packet Switching
+- IP Address
+- TCP/IP
+- HTTP/HTTPS
 
 💡 **Tip:** You may use ChatGPT (as demonstrated in Task 1) to refine your explanation.
 
 ## Answer
 
-Add your answer here...
+## Task 2: Internet and Networking Basics
+
+The internet is a global network that connects computers and devices, allowing them to communicate and share information. For example, when a customer visits EpicReads, an online bookstore hosted in Finland, their request travels across the internet to the bookstore’s server.
+
+**Packet switching** is the process of breaking data into smaller packets that travel across the network and are reassembled at their destination. An **IP address** identifies a device on a network so data can reach the correct destination. **TCP/IP** is a set of communication protocols that helps devices send, receive, and route data reliably. **HTTP** is used to transfer web pages between a browser and a server, while **HTTPS** adds encryption to help protect information exchanged between them.
+
+These networking concepts work together to help customers access EpicReads, browse books, and place orders online.
 
 ---
 
@@ -71,30 +77,31 @@ EpicReads bookstore has two application versions:
 
 ### Two-Tier Application
 
-* Frontend
-* Database
+- Frontend
+- Database
 
 ### Three-Tier Application
 
-* Frontend
-* Backend
-* Database
+- Frontend
+- Backend
+- Database
 
 ## Your Task
 
-* Draw simple diagrams (hand-drawn or tool-based such as draw.io)
-* Label each layer clearly
-* List at least two common technologies or tools used for each layer
-* Submit a screenshot or photo clearly showing your own drawing
+- Draw simple diagrams (hand-drawn or tool-based such as draw.io)
+- Label each layer clearly
+- List at least two common technologies or tools used for each layer
+- Submit a screenshot or photo clearly showing your own drawing
 
 ## Diagram Screenshot / Photo
 
-Save your diagram image in the `screenshots` folder and update the file name below.
+**2-tier**
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Two-Tier Architecture Diagram](screenshots/task_3_Two-Tier%20Architecture%20Diagram.png)
 
+**3-tier**
 
-Replace `task-3-diagram.png` with your actual diagram file name.
+![Three-Tier Architecture - EpicReads](screenshots/task_3_Three-Tier%20Architecture%20-%20EpicReads.png)
 
 ---
 
@@ -102,18 +109,20 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+- HTML
+- CSS
+- React
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+- Python Flask
+- Node.js
+- Django
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+- MySQL
+- PostgreSQL
 
 ---
 
@@ -142,7 +151,9 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS (Domain Name System) translates domain names into IP addresses so that browsers can find the correct servers. For example, when someone visits epicreads.com, DNS helps the browser find the server hosting the website instead of requiring the user to remember its IP address.
+
+To map epicreads.com to the IPv4 address 52.172.142.222, an A record is created in the domain’s DNS settings. The A record connects the domain name to that IPv4 address. When someone visits the domain, DNS can return this address so the browser knows where to send its request.
 
 ---
 
@@ -154,8 +165,8 @@ Install Visual Studio Code (if not already installed).
 
 Take a screenshot of your VS Code environment showing:
 
-* Terminal open inside VS Code
-* Running a basic command:
+- Terminal open inside VS Code
+- Running a basic command:
 
 ### Windows
 
@@ -170,18 +181,15 @@ pwd
 ls
 ```
 
-* Your selected VS Code theme clearly visible
+- Your selected VS Code theme clearly visible
 
 ⚠️ **Important:** The screenshot must show your username or another identifiable detail to confirm it is your environment.
 
 ## Screenshot
 
-Save your screenshot in the `screenshots` folder and update the file name below.
+## Task 5: VS Code Setup
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
-
-
-Replace `task-5-vscode.png` with your actual screenshot file name.
+![VS Code Screenshot](screenshots/task_5_vscode.png)
 
 ---
 
@@ -191,9 +199,9 @@ Replace `task-5-vscode.png` with your actual screenshot file name.
 
 Publishing on LinkedIn helps you:
 
-* Build your professional online presence
-* Reinforce your learning
-* Document your DevOps journey publicly
+- Build your professional online presence
+- Reinforce your learning
+- Document your DevOps journey publicly
 
 ## Your Task
 
@@ -201,72 +209,50 @@ Summarize your answers from Tasks 1–5 into a LinkedIn post.
 
 Clearly structure your post into the following sections:
 
-* ChatGPT
-* Internet & Networking
-* App Architecture
-* DNS
-* VS Code Setup
+- ChatGPT
+- Internet & Networking
+- App Architecture
+- DNS
+- VS Code Setup
 
-Use the credit note that matches your track:
-
-Add the following credit note at the end of your post **(If you are DMI Cohort 3 student)**:
-
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
-
-**Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) in your LinkedIn post, then tag Lead Co-Mentor — [Anjana Muthunayake](https://www.linkedin.com/in/anjana-muthunayake/).**
-
-Add the following credit note at the end of your post **(If you are DMI Self-paced track student)**:
-
-> **P.S. This post is part of the DevOps Micro Internship (DMI) — Self-Paced Engineer Track — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=self-paced**
-
-Add the following credit note at the end of your post **(If you are DMI Campus student)**:
-
-> **P.S. This post is part of the DevOps Micro Internship (DMI) — Campus — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=campus**
-
-**Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) in your LinkedIn post, then tag Lead Co-Mentor — [Anjana Muthunayake](https://www.linkedin.com/in/anjana-muthunayake/).**
-
-Hashtags:
-
-#DMIByPravinMishra #AgenticAI #DevOps
-
-Replace `YOUR-GITHUB-USERNAME` with your GitHub username — that link is your public DMI progress page (your graded badge page).
 ---
 
 ## LinkedIn Post URL
 
 Paste your LinkedIn post URL here:
 
-```text
-Add your URL here...
-```
+[View my Week 0 LinkedIn post](https://lnkd.in/p/dPP2PGHb)
 
 ---
 
-## LinkedIn Post Backup Copy
+### LinkedIn Post Backup Copy
 
-Paste the full text of your LinkedIn post here:
+I shared my Week 0 learning journey on LinkedIn, reflecting on internet and networking basics, application architecture, DNS, and my VS Code setup.
 
-Add your post content here...
+#### Screenshot Evidence
+
+![LinkedIn Post Screenshot](screenshots/task_6_linkedinpost.png)
 
 ---
 
-# Reflection – Week 0
+# Reflection - Week 0
 
 ### What did you find easy?
 
-Add your answer here...
+I enjoyed learning how the internet works and how devices communicate with each other
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+At first, understanding the two-tier and three-tier architectures and DNS was a bit challenging, but breaking them down helped me understand them better.
+I realised that there is still a lot to learn, and I need to take my time to understand each concept properly.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I want to practise more, ask questions when I get stuck, and become more confident in what I am learning.
 
 ---
 
@@ -276,17 +262,14 @@ DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mi
 
 It helps learners build strong DevOps foundations with hands-on experience.
 
-
 ## 📌 Resources
 
-- 🌐 **DMI Official Website:** https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 **University:** https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 **Discord Community:** https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 **Blog:** https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ **YouTube Playlist (DMI Cohort 3):** https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 **Pravin Mishra (LinkedIn):** https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
-- 🏢 **CloudAdvisory (LinkedIn):** https://www.linkedin.com/company/thecloudadvisory/
+- 🌐 **DMI Official Website:** [https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme](https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme)
+- 🎓 **University:** [https://university.pravinmishra.com?utm_source=github&utm_medium=readme](https://university.pravinmishra.com?utm_source=github&utm_medium=readme)
+- 💬 **Discord Community:** [https://discord.pravinmishra.com?utm_source=github&utm_medium=readme](https://discord.pravinmishra.com?utm_source=github&utm_medium=readme)
+- 📝 **Blog:** [https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme](https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme)
+- ▶️ **YouTube Playlist (DMI Cohort 3):** [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
+- 🔗 **Pravin Mishra (LinkedIn):** [https://www.linkedin.com/in/pravin-mishra-aws-trainer/](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
+- 🏢 **CloudAdvisory (LinkedIn):** [https://www.linkedin.com/company/thecloudadvisory/](https://www.linkedin.com/company/thecloudadvisory/)
 
 ---
-
-*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track*
