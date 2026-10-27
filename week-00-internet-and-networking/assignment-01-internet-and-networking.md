@@ -256,20 +256,23 @@ Next week, I want to practise more, ask questions when I get stuck, and become m
 
 ---
 
-## 📌 About DMI & CloudAdvisory
 
-DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
-It helps learners build strong DevOps foundations with hands-on experience.
 
-## 📌 Resources
+## 👩🏽‍💻 Personal Reflection
 
-- 🌐 **DMI Official Website:** [https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme](https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme)
-- 🎓 **University:** [https://university.pravinmishra.com?utm_source=github&utm_medium=readme](https://university.pravinmishra.com?utm_source=github&utm_medium=readme)
-- 💬 **Discord Community:** [https://discord.pravinmishra.com?utm_source=github&utm_medium=readme](https://discord.pravinmishra.com?utm_source=github&utm_medium=readme)
-- 📝 **Blog:** [https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme](https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme)
-- ▶️ **YouTube Playlist (DMI Cohort 3):** [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
-- 🔗 **Pravin Mishra (LinkedIn):** [https://www.linkedin.com/in/pravin-mishra-aws-trainer/](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
-- 🏢 **CloudAdvisory (LinkedIn):** [https://www.linkedin.com/company/thecloudadvisory/](https://www.linkedin.com/company/thecloudadvisory/)
+Completing this assignment helped me build a better understanding of internet and networking fundamentals. I explored how devices communicate, how application architectures are structured, and how DNS connects domain names to IP addresses.
+
+As I continue my DevOps journey, I want to strengthen these foundations through consistent practice, hands-on projects, and documenting what I learn along the way.
+
+## 🎯 Conclusion
+
+Week 0 has been a valuable starting point in my DevOps learning journey. I look forward to building on these fundamentals and applying them in future practical projects.
 
 ---
+
+
+**Author:** Samkeliso Dube  
+**Role:** DevOps Engineer | Cloud Engineer  
+**GitHub:** [Samkeliso-Dube](https://github.com/Samkeliso-dube00)  
+**LinkedIn:** [Samkeliso Dube](https://www.linkedin.com/in/samkeliso-dube03/)
