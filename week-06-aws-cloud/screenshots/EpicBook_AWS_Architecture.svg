@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">EpicBook AWS Deployment Architecture</title>
+  <desc id="desc">AWS VPC architecture showing internet users reaching Nginx and an EpicBook Node.js application on a public EC2 instance, which connects to a private RDS MySQL database across two private database subnets.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .main-title { font-size: 34px; font-weight: 700; fill: #18365f; }
+      .subtitle { font-size: 17px; fill: #64748b; }
+      .section { font-size: 19px; font-weight: 700; }
+      .node-title { font-size: 17px; font-weight: 700; }
+      .body { font-size: 14px; }
+      .small { font-size: 12px; }
+      .tiny { font-size: 11px; }
+      .muted { fill: #64748b; }
+      .white { fill: #ffffff; }
+      .public-fill { fill: #edf4ff; stroke: #4778b8; stroke-width: 2; }
+      .private-fill { fill: #edf7ef; stroke: #4d8a5a; stroke-width: 2; }
+      .service { fill: #ffffff; stroke: #4778b8; stroke-width: 1.8; }
+      .db-service { fill: #ffffff; stroke: #4d8a5a; stroke-width: 1.8; }
+      .security { fill: #fff8e6; stroke: #c28a18; stroke-width: 1.6; }
+      .line { fill: none; stroke: #355f91; stroke-width: 3; marker-end: url(#arrow); }
+      .line-green { fill: none; stroke: #438052; stroke-width: 3; marker-end: url(#arrow-green); }
+      .dashed { fill: none; stroke: #bd8617; stroke-width: 1.8; stroke-dasharray: 7 6; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#355f91"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#438052"/>
+    </marker>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity=".10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1080" fill="#f7f9fc"/>
+  <text x="70" y="66" class="main-title">EpicBook · AWS Deployment Architecture</text>
+  <text x="72" y="98" class="subtitle">Three-tier application deployment · Public EC2 application tier · Private RDS database tier</text>
+
+  <!-- Internet users -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="130" width="300" height="76" rx="13" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+  </g>
+  <circle cx="690" cy="168" r="17" fill="#e8eef7"/>
+  <path d="M681 168h18M690 159v18M684 162c4 4 4 12 0 16M696 162c-4 4-4 12 0 16" stroke="#355f91" stroke-width="1.5" fill="none"/>
+  <text x="720" y="162" class="node-title">Internet users</text>
+  <text x="720" y="184" class="body muted">Browser · HTTP to EC2 public IP</text>
+
+  <!-- VPC boundary -->
+  <rect x="55" y="255" width="1490" height="755" rx="20" fill="#ffffff" stroke="#274c77" stroke-width="2.5"/>
+  <rect x="78" y="238" width="465" height="38" rx="8" fill="#274c77"/>
+  <text x="96" y="263" class="section white">VPC · epicbook-vpc · 10.0.0.0/16</text>
+
+  <!-- Internet gateway -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="295" width="300" height="68" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.7"/>
+  </g>
+  <text x="800" y="322" text-anchor="middle" class="node-title">Internet Gateway</text>
+  <text x="800" y="344" text-anchor="middle" class="body muted">epicbook-igw · attached to VPC</text>
+  <path d="M800 206 V294" class="line"/>
+  <text x="818" y="250" class="small muted">Internet access</text>
+
+  <!-- Public subnet -->
+  <rect x="95" y="405" width="720" height="550" rx="16" class="public-fill"/>
+  <rect x="115" y="386" width="490" height="38" rx="8" fill="#2f5f99"/>
+  <text x="132" y="411" class="section white">PUBLIC SUBNET · epicbook-public-subnet</text>
+  <text x="132" y="446" class="body" fill="#355f91">CIDR: 10.0.1.0/24</text>
+
+  <!-- Public route table -->
+  <rect x="125" y="468" width="250" height="72" rx="10" fill="#ffffff" stroke="#7b9bc2" stroke-width="1.5"/>
+  <text x="145" y="495" class="node-title">Route table</text>
+  <text x="145" y="517" class="body">epicbook-public-rt</text>
+  <text x="145" y="533" class="small muted">0.0.0.0/0 → epicbook-igw</text>
+  <path d="M650 329 H505 V505 H376" class="line"/>
+  <text x="520" y="486" class="small muted">Default route</text>
+
+  <!-- EC2 instance container -->
+  <rect x="410" y="468" width="370" height="395" rx="14" fill="#dce9f8" stroke="#4778b8" stroke-width="2"/>
+  <text x="430" y="497" class="node-title">EC2 · epicbook-ec2</text>
+  <text x="430" y="519" class="body muted">Ubuntu Server LTS</text>
+  <text x="430" y="540" class="small muted">Security group: epicbook-ec2-sg</text>
+
+  <!-- Nginx -->
+  <rect x="450" y="570" width="290" height="92" rx="11" class="service" filter="url(#shadow)"/>
+  <rect x="450" y="570" width="8" height="92" rx="4" fill="#2f5f99"/>
+  <text x="475" y="600" class="node-title">Nginx</text>
+  <text x="475" y="624" class="body">Port 80 · public HTTP entry</text>
+  <text x="475" y="645" class="small muted">Receives incoming browser requests</text>
+
+  <!-- Express app -->
+  <rect x="450" y="710" width="290" height="112" rx="11" class="service" filter="url(#shadow)"/>
+  <rect x="450" y="710" width="8" height="112" rx="4" fill="#2f5f99"/>
+  <text x="475" y="740" class="node-title">EpicBook application</text>
+  <text x="475" y="763" class="body">Node.js / Express · Port 8080</text>
+  <text x="475" y="785" class="small muted">Internal only · serves pages and static files</text>
+  <text x="475" y="804" class="small" fill="#2f5f99">Not open to the public internet</text>
+
+  <path d="M595 662 V708" class="line"/>
+  <text x="610" y="691" class="small muted">Proxy · :8080</text>
+
+  <!-- Incoming IGW to Nginx -->
+  <path d="M800 363 V385 H595 V568" class="line"/>
+  <text x="815" y="390" class="small muted">HTTP :80</text>
+
+  <!-- Security group EC2 -->
+  <rect x="125" y="575" width="250" height="148" rx="11" class="security"/>
+  <text x="145" y="603" class="node-title">EC2 security group</text>
+  <text x="145" y="625" class="body">epicbook-ec2-sg</text>
+  <line x1="145" y1="638" x2="355" y2="638" stroke="#e4c77e"/>
+  <text x="145" y="661" class="body">SSH · TCP 22</text>
+  <text x="145" y="680" class="small muted">Source: My IP</text>
+  <text x="145" y="704" class="body">HTTP · TCP 80</text>
+  <text x="145" y="720" class="small muted">Source: 0.0.0.0/0</text>
+  <path d="M375 644 H408" class="dashed"/>
+
+  <!-- Private subnets -->
+  <rect x="855" y="405" width="650" height="550" rx="16" class="private-fill"/>
+  <rect x="875" y="386" width="550" height="38" rx="8" fill="#39764a"/>
+  <text x="892" y="411" class="section white">PRIVATE DATABASE SUBNETS</text>
+  <text x="892" y="446" class="body" fill="#39764a">No route to Internet Gateway · RDS public access: No</text>
+
+  <!-- AZ subnet 1 -->
+  <rect x="885" y="475" width="270" height="115" rx="11" fill="#ffffff" stroke="#78a783" stroke-width="1.5"/>
+  <text x="905" y="504" class="node-title">Availability Zone 1</text>
+  <text x="905" y="530" class="body">epicbook-private-db-</text>
+  <text x="905" y="549" class="body">subnet-1</text>
+  <text x="905" y="572" class="small muted">10.0.2.0/24</text>
+
+  <!-- AZ subnet 2 -->
+  <rect x="1200" y="475" width="270" height="115" rx="11" fill="#ffffff" stroke="#78a783" stroke-width="1.5"/>
+  <text x="1220" y="504" class="node-title">Availability Zone 2</text>
+  <text x="1220" y="530" class="body">epicbook-private-db-</text>
+  <text x="1220" y="549" class="body">subnet-2</text>
+  <text x="1220" y="572" class="small muted">10.0.3.0/24</text>
+
+  <!-- RDS -->
+  <rect x="965" y="660" width="420" height="170" rx="14" class="db-service" filter="url(#shadow)"/>
+  <rect x="965" y="660" width="9" height="170" rx="4" fill="#39764a"/>
+  <text x="992" y="694" class="node-title">Amazon RDS · MySQL</text>
+  <text x="992" y="720" class="body">DB instance: epicbook-db</text>
+  <text x="992" y="743" class="body">Database: bookstore · Port 3306</text>
+  <text x="992" y="766" class="body">Public access: No</text>
+  <text x="992" y="789" class="small muted">DB subnet group: epicbook-db-subnet-group</text>
+  <text x="992" y="811" class="small muted">Security group: epicbook-rds-sg</text>
+
+  <!-- Subnet membership dashed lines -->
+  <path d="M1020 590 V635 H1080 V658" class="dashed"/>
+  <path d="M1335 590 V635 H1255 V658" class="dashed"/>
+
+  <!-- App to RDS -->
+  <path d="M740 765 H835 V745 H963" class="line-green"/>
+  <rect x="797" y="710" width="158" height="39" rx="8" fill="#f0f8f1" stroke="#78a783"/>
+  <text x="876" y="726" text-anchor="middle" class="small" font-weight="700">MySQL · TCP 3306</text>
+  <text x="876" y="741" text-anchor="middle" class="tiny muted">bookstore</text>
+
+  <!-- RDS security group -->
+  <rect x="1040" y="860" width="360" height="65" rx="10" class="security"/>
+  <text x="1060" y="885" class="node-title">RDS security group · epicbook-rds-sg</text>
+  <text x="1060" y="907" class="body">MySQL :3306 · source: epicbook-ec2-sg only</text>
+  <path d="M1215 830 V858" class="dashed"/>
+
+  <!-- Legend / key -->
+  <rect x="95" y="975" width="1410" height="1" fill="#d6dee9"/>
+  <rect x="110" y="990" width="16" height="16" rx="3" fill="#edf4ff" stroke="#4778b8"/>
+  <text x="135" y="1003" class="small">Public application tier</text>
+  <rect x="330" y="990" width="16" height="16" rx="3" fill="#edf7ef" stroke="#4d8a5a"/>
+  <text x="355" y="1003" class="small">Private database tier</text>
+  <rect x="565" y="990" width="16" height="16" rx="3" fill="#fff8e6" stroke="#c28a18"/>
+  <text x="590" y="1003" class="small">Security group rules</text>
+  <path d="M815 998 H875" class="line"/>
+  <text x="890" y="1003" class="small">Application traffic direction</text>
+  <path d="M1135 998 H1195" class="dashed"/>
+  <text x="1210" y="1003" class="small">Association / applies to</text>
+
+  <text x="800" y="1050" text-anchor="middle" class="small muted">EpicBook AWS deployment · Public HTTP entry on port 80 · Internal application port 8080 · Private MySQL port 3306</text>
+</svg>
