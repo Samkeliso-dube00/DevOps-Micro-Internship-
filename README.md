@@ -1,4 +1,4 @@
-
+ 
 <div align="center">
 
   <img src="https://img.shields.io/badge/🚀_DEVOPS-MICRO_INTERNSHIP-6C63FF?style=for-the-badge&labelColor=161B22" alt="DevOps Micro Internship" />
@@ -107,17 +107,20 @@ DevOps-Micro-Internship/
 
 ---
 
-## 🏆 Achievements
+## 🏆 Achievements & Milestones
 
-- [x] 🚀 Started the DMI programme
-- [x] 📦 Created my learning repository
-- [ ] 🐧 Wrote my first Bash automation script
-- [ ] 🌿 Opened my first pull request
-- [ ] ☁️ Deployed my first cloud resource
-- [ ] 🏗️ Provisioned infrastructure with Terraform
-- [ ] 🐳 Containerised an application
-- [ ] ☸️ Ran a workload on Kubernetes
-- [ ] 👑 Completed my final project
+A collection of milestones reached throughout my DevOps learning journey.
+
+- [x] 🚀 Started the DevOps Micro Internship (DMI).
+- [x] 📦 Created and organised my GitHub learning repository.
+- [x] 🐧 Gained hands-on experience with Linux.
+- [x] 🌿 Practised Git and GitHub workflows.
+- [x] ☁️ Completed hands-on AWS cloud deployment exercises.
+- [x] 🏗️ Gained practical experience with Terraform.
+- [x] 🐳 Practised containerisation with Docker.
+- [x] ☸️ Explored Kubernetes fundamentals.
+
+*More milestones will be added as I complete projects, overcome technical challenges, and expand my practical experience.*
 
 ---
 
