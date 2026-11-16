@@ -67,11 +67,14 @@ OVERALL PROGRESS   ▰▰▱▱▱▱▱▱▱▱▱▱▱▱   2 / 14 modules s
 
 ## 📂 Repository Structure
 
+The repository is organised by the DMI learning modules. Additional topics that are not part of the core DMI curriculum are kept separately under `additional-learning/`.
+
 ```text
 DevOps-Micro-Internship/
+├── additional-learning/
+│   └── agentic-ai/
 ├── week-00-internet-and-networking/
 ├── week-01-success-mindset/
-├── week-02-agentic-ai/
 ├── week-03-linux-and-bash-for-devops/
 ├── week-04-git-and-github/
 ├── week-05-devops-lifecycle/
@@ -84,20 +87,6 @@ DevOps-Micro-Internship/
 ├── week-12-kubernetes/
 └── week-13-final-project/
 ```
-
-<details>
-<summary><strong>📁 What's inside each week folder?</strong></summary>
-
-```text
-week-XX-topic/
-├── README.md
-├── notes/
-├── assignments/
-├── screenshots/
-└── troubleshooting.md
-```
-
-</details>
 
 ---
 
