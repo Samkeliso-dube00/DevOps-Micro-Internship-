@@ -24,16 +24,21 @@
 
 ---
 
-## 👩🏽‍💻 About Me
+## 👋 About Me
 
-Hi, I'm **Samkeliso Dube**, a Cloud Engineering graduate building practical skills in DevOps and cloud technologies.
+Hi, I'm **Samkeliso Dube**, a Junior DevOps and Cloud Engineer from Zimbabwe.
 
-I'm using this repository to document my hands-on learning journey through the **DevOps Micro Internship (DMI)**. I believe in learning by doing: understanding concepts, working through technical challenges, troubleshooting errors, and documenting what I learn along the way.
+I studied Cloud Engineering at **AltSchool Africa**, where I developed a foundation in cloud technologies and DevOps practices.
 
-My focus is on strengthening my skills in Linux, networking, Git, cloud platforms, Infrastructure as Code, automation, and containerisation.
+I'm using this repository to document my practical learning journey through the **DevOps Micro Internship (DMI)**. It brings together hands-on assignments, technical notes, deployment projects, troubleshooting experiences, and lessons learned.
 
-**My approach:** Learn the fundamentals. Practise consistently. Troubleshoot with purpose. Document the process. Keep improving.
+### 🎯 My Approach
 
+- 📚 Learn the fundamentals.
+- 🛠️ Apply knowledge through hands-on practice.
+- 🔍 Troubleshoot problems and understand their causes.
+- 📝 Document the process and lessons learned.
+- 🚀 Keep improving through continuous practice.
 ---
 
 ## 🎛️ Mission Control
