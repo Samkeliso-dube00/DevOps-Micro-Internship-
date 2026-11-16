@@ -126,7 +126,9 @@ A collection of milestones reached throughout my DevOps learning journey.
 
 ## 🙏 Acknowledgements
 
-This learning journey is part of the **DevOps Micro Internship (DMI)** programme associated with Pravin Mishra and The CloudAdvisory.
+I'm grateful to **Pravin Mishra and The CloudAdvisory** for providing the DevOps Micro Internship (DMI) learning programme and resources that have supported my learning journey.
+
+The following resources have been useful throughout my learning:
 
 | Resource | Link |
 |---|---|
