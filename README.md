@@ -144,16 +144,16 @@ The following resources have been useful throughout my learning:
 
 <p align="center">
   <a href="https://www.linkedin.com/in/samkeliso-dube03/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2" alt="LinkedIn" />
   </a>
   <a href="https://github.com/Samkeliso-dube00">
-    <img src="https://img.shields.io/badge/GitHub-Follow-24292F?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white&labelColor=24292F" alt="GitHub" />
   </a>
   <a href="https://dev.to/samkeliso_dube">
-    <img src="https://img.shields.io/badge/Dev.to-Read%20My%20Blogs-111111?style=flat-square&logo=devdotto&logoColor=white" alt="Dev.to" />
+    <img src="https://img.shields.io/badge/DEV.to-000000?style=for-the-badge&logo=devdotto&logoColor=white&labelColor=000000" alt="DEV.to" />
   </a>
   <a href="https://medium.com/@lainnecoatzee">
-    <img src="https://img.shields.io/badge/Medium-Read%20My%20Stories-795548?style=flat-square&logo=medium&logoColor=white" alt="Medium" />
+    <img src="https://img.shields.io/badge/Medium-795548?style=for-the-badge&logo=medium&logoColor=white&labelColor=795548" alt="Medium" />
   </a>
 </p>
 
