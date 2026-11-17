@@ -1,5 +1,5 @@
 
-# Week 00 - Internet and Networking
+# Week 00 : Internet and Networking
 
 ---
 
@@ -24,15 +24,15 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Prompt](screenshots/task_1_promt.png)
+![Task 1 Prompt](screenshots/W00_T01_Prompt.png)
 
 **Response**
 
-![Task 1 Response](screenshots/task_1_response.png)
+![Task 1 Response](screenshots/W00_T01_Response.png)
 
 ---
 
-## What I Learned (2–3 lines)
+## What I Learned (2-3 lines)
 
 I learned that ChatGPT can help me understand DevOps concepts by breaking complex topics into simple, manageable steps. I also learned how to ask clear questions to get more useful explanations and practical examples.
 
@@ -48,7 +48,7 @@ He asked you to explain how users globally can access his website hosted in Finl
 
 ## Your Task
 
-Write a short explanation (**100–150 words**) that includes:
+Write a short explanation (**100-150 words**) that includes:
 
 - Packet Switching
 - IP Address
@@ -97,11 +97,11 @@ EpicReads bookstore has two application versions:
 
 **2-tier**
 
-![Two-Tier Architecture Diagram](screenshots/task_3_Two-Tier%20Architecture%20Diagram.png)
+![Two-Tier Architecture Diagram](screenshots/W00_T03_Two_Tier_Architecture.png)
 
 **3-tier**
 
-![Three-Tier Architecture - EpicReads](screenshots/task_3_Three-Tier%20Architecture%20-%20EpicReads.png)
+![Three-Tier Architecture - EpicReads](screenshots/W00_T03_Three_Tier_Architecture_EpicReads.png)
 
 ---
 
@@ -189,7 +189,7 @@ ls
 
 ## Task 5: VS Code Setup
 
-![VS Code Screenshot](screenshots/task_5_vscode.png)
+![VS Code Screenshot](screenshots/W00_T05_VSCode.png)
 
 ---
 
@@ -221,7 +221,7 @@ Clearly structure your post into the following sections:
 
 Paste your LinkedIn post URL here:
 
-[View my Week 0 LinkedIn post](https://lnkd.in/p/dPP2PGHb)
+[View my Week 00 LinkedIn post](https://lnkd.in/p/dQXUDCeZ)
 
 ---
 
@@ -231,7 +231,7 @@ I shared my Week 0 learning journey on LinkedIn, reflecting on internet and netw
 
 #### Screenshot Evidence
 
-![LinkedIn Post Screenshot](screenshots/task_6_linkedinpost.png)
+![LinkedIn Post Screenshot](screenshots/W00_T06_LinkedIn_Post.png)
 
 ---
 
