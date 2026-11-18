@@ -139,6 +139,8 @@ Paste your LinkedIn post URL here:
 
 `Add your URL here`
 
+> **Note:** The original LinkedIn post and deployment link were retained. The application was rebuilt afterward, and the screenshots in this assignment were recaptured to reflect the updated deployment.
+
 **Screenshot : LinkedIn post showing the deployed application**
 
 Add your screenshot here.
