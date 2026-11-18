@@ -137,11 +137,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 [View LinkedIn Post](https://www.linkedin.com/posts/samkeliso-dube03_devops-cloudengineering-softwareengineering-activity-7419356690745237504-O23W/)
 
-<<<<<<< HEAD
 **Update:**
-=======
-
->>>>>>> bd4ee4e (docs(week-02): add Assignment 02 deployment screenshots)
 
 The original project link remains unchanged. I've since rebuilt the application deployment and updated the screenshots to reflect the latest version of the live application.
 
