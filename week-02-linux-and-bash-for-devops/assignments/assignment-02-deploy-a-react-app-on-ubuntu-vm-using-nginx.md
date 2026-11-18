@@ -145,9 +145,6 @@ The updated screenshots provide more accurate evidence of the completed deployme
 
 Thank you!
 
-**Screenshot: LinkedIn post showing the deployed application**
-
-Add your screenshot here.
 
 ---
 
