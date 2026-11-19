@@ -50,13 +50,9 @@ Verify that the deployed React application is reachable from the browser and con
 
 ### Notes
 
-Answer the following in your own words:
-
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-**1. What proves Nginx is listening on 0.0.0.0:80?**
-
-The listening-port output shows Nginx bound to `0.0.0.0:80`. `0.0.0.0` means it is listening on all IPv4 network interfaces, while port `80` is the HTTP port.
+The listening-port output shows Nginx bound to `0.0.0.0:80`. The address `0.0.0.0` means Nginx is listening on all IPv4 network interfaces, and port `80` is used for HTTP traffic.
 
 ---
 
@@ -68,21 +64,7 @@ The listening-port output shows the SSH service listening on port `22`. This con
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Use the `Listening_Ports` screenshot to identify the ports and their owning processes. Only services required for the server's role should be exposed. Record any additional listener found there before submission.
-
----
-
-**2. What proves SSH is active on port 22?**
-
-Write your answer here.
-
----
-
-**3. Did you find any unexpected open ports? Explain briefly.**
-
-Write your answer here.
-
----
+Review the `Listening_Ports` screenshot and identify each listening port and its owning process. The expected services for this VM include SSH for administration and Nginx for web traffic. Record any other listener shown in the screenshot and explain whether it is required. Do not expose services that are not needed.
 
 # Task 2 — Service Health & Systemd Validation (Nginx)
 
@@ -375,38 +357,33 @@ Review and reflect on the security and reliability practices applied during this
 
 ### Security & Reliability Notes
 
-Answer the following in your own words:
-
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH keys use a cryptographic key pair. The private key stays with the authorised user, while the server stores the public key. This avoids sending a reusable password over the connection and makes unauthorised access harder, especially when the private key is protected.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Every open port can expose a service to possible attack. Closing ports that are not needed reduces the server's attack surface and limits the ways an attacker could try to gain access.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx at boot allows the web server to start automatically when the VM restarts. This helps the application return to service without someone having to log in and start Nginx manually.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Anyone who obtains exposed credentials or private keys may be able to access servers, databases, or cloud accounts. This can lead to data theft, service disruption, unauthorised changes, and unexpected costs. Secrets should be kept out of public repositories and rotated immediately if exposed.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
-
----
-
+Unused cloud resources can continue generating charges and may leave unnecessary services or access paths running. Stop or terminate resources according to the lab requirements, and confirm that important data and evidence have been saved first.
 # LinkedIn Post (Required)
 
 ## Evidence
