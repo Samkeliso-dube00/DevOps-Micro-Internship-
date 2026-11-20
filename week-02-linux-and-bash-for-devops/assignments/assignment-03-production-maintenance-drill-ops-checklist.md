@@ -1,6 +1,4 @@
-# Assignment 3 — Production Maintenance Drill (OPS Checklist)
-
-Part of the DevOps Micro Internship (DMI) with Agentic AI
+# Assignment 3 : Production Maintenance Drill (OPS Checklist)
 
 ---
 
@@ -10,7 +8,7 @@ In this assignment, you will treat your already deployed React application (on U
 
 ---
 
-# Task 1 — Server Access & Networking Validation
+# Task 1 : Server Access & Networking Validation
 
 ## Goal
 
@@ -26,25 +24,13 @@ Verify that the deployed React application is reachable from the browser and con
 
 ![Screenshot: Network interfaces from `ip a`](../screenshots/W02_A03_T01_Network_Interfaces.png)
 
-#### Listening ports and processes
+#### Listening ports and processes 
 
 ![Screenshot: Listening ports and processes](../screenshots/W02_A03_T01_Listening_Ports.png)
 
 #### UFW firewall status
 
 ![Screenshot: UFW firewall status](../screenshots/W02_A03_T01_UFW_Firewall_Status.png)
-
-#### DNS resolution check
-
-![Screenshot: DNS resolution check](../screenshots/W02_A03_T01_DNS_Resolution.png)
-
-#### Network connectivity check
-
-![Screenshot: Network connectivity check](../screenshots/W02_A03_T01_Network_Connectivity.png)
-
-#### Routing table
-
-![Screenshot: Routing table](../screenshots/W02_A03_T01_Routing_Table.png)
 
 ---
 
@@ -64,9 +50,12 @@ The listening-port output shows the SSH service listening on port `22`. This con
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Review the `Listening_Ports` screenshot and identify each listening port and its owning process. The expected services for this VM include SSH for administration and Nginx for web traffic. Record any other listener shown in the screenshot and explain whether it is required. Do not expose services that are not needed.
+No unexpected open ports were identified. The listening ports were consistent with the services running on the server, including SSH on port 22 and Nginx on port 80.
 
-# Task 2 — Service Health & Systemd Validation (Nginx)
+---
+
+
+# Task 2 : Service Health & Systemd Validation (Nginx)
 
 ## Goal
 
@@ -86,18 +75,6 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 ![Screenshot: Nginx listening on port 80](../screenshots/W02_A03_T02_Nginx_Port_80_Listener.png)
 
-#### Nginx processes
-
-![Screenshot: Nginx processes](../screenshots/W02_A03_T02_Nginx_Processes.png)
-
-#### Nginx enabled at boot
-
-![Screenshot: Nginx enabled at boot](../screenshots/W02_A03_T02_Nginx_Service_Enablement.png)
-
-#### Nginx service restart
-
-![Screenshot: Nginx service restart](../screenshots/W02_A03_T02_Nginx_Service_Restart.png)
-
 ---
 
 ### Notes
@@ -116,21 +93,13 @@ Keep a known-good copy of the Nginx configuration and the previous application b
 
 ---
 
-# Task 3 — Logs & Request Trace
+# Task 3 : Logs & Request Trace
 
 ## Goal
 
 Verify real traffic flow and analyze logs to understand system behavior and errors.
 
 ### Evidence
-
-#### Generated HTTP traffic
-
-![Screenshot: Generated HTTP traffic](../screenshots/W02_A03_T03_Generate_Traffic.png)
-
-#### HTTP response status
-
-![Screenshot: HTTP response status](../screenshots/W02_A03_T03_HTTP_Response_Status.png)
 
 #### Nginx access log
 
@@ -152,26 +121,23 @@ Answer the following in your own words:
 
 **1. Were there any errors in the logs?**
 
-- If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
-- If no, explain what it means if the error log is empty or shows no recent errors during your check.
-
-The access and error log screenshots are the evidence for this check. Review the error log for entries and record one or two exact lines if present. Do not treat every log entry as a failure: use its message and timestamp to understand what happened.
+The Nginx error log showed one notice message about Nginx using inherited sockets. I did not find any critical errors in the output I checked. This suggests that Nginx was running without reporting any serious errors during the inspection.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-If the error log contains no relevant errors during the test window, that is a positive sign that Nginx did not report application-serving or configuration errors at that time. It does not prove that every part of the system is error-free.
+This is a positive sign because Nginx did not report any relevant errors during the inspection. It suggests that the service was operating normally at that time. However, the absence of errors in the log does not guarantee that the entire system is free from problems.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-The generated requests should appear in the Nginx access log with their request paths and HTTP status codes. This confirms that the requests reached Nginx and were recorded by its access-logging mechanism.
+Yes, the curl requests were expected to appear in the Nginx access log, showing the requested paths and their HTTP status codes. This confirms that the requests reached Nginx and were recorded by its access-logging mechanism.
 
 ---
 
-# Task 4 — System Resource Health Check (Capacity Red Flags)
+# Task 4 : System Resource Health Check (Capacity Red Flags)
 
 ## Goal
 
@@ -203,17 +169,19 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Compare the captured `uptime`, `free -h`, and `df -h` outputs. The most critical resource is the one showing the least available headroom or unusually high utilisation. Record the actual value from the screenshots rather than guessing.
+Disk usage is the one I'd keep an eye on. The root filesystem is 53% full, with 3.2 GB of space still available. Memory also looks okay, with 555 MiB available, and the CPU load averages are all 0.00.
+
+From these results, none of the resources appears to be under pressure at the moment. However, I'd monitor disk usage to make sure it doesn't get too full.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-When a production disk reaches 100% usage, applications may fail to write files, logs may stop updating, package operations can fail, and services may become unstable. Investigate large files and directories, then free space safely without deleting files blindly.
+If the disk becomes completely full, the server may start having problems. Applications might fail to save files, logs may stop recording new events, and some services may stop working properly. Even software updates or package installations can fail because there is no space left. I would check which files and directories are using the most space and safely remove unnecessary files to free up storage.
 
 ---
 
-# Task 5 — Configuration & Deployment Verification
+# Task 5 : Configuration & Deployment Verification
 
 ## Goal
 
@@ -237,11 +205,11 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-The web-root listing confirms which build files are present, while the Nginx `try_files` setting shows how requests are handled. A complete check also verifies the deployed identity marker. That identity-marker search was not completed during this work session, so do not claim that the deployment identity was verified yet.
+I would check the web-root directory to see if the application files are there. I would also check the Nginx try_files setting to make sure it is pointing to the correct files. 
 
 ---
 
-# Task 6 — Nginx Configuration Failure Simulation
+# Task 6 : Nginx Configuration Failure Simulation
 
 ## Goal
 
@@ -277,23 +245,23 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-The failure was caused by an intentional syntax error introduced into the Nginx site configuration. Nginx rejected the invalid configuration during its syntax test.
+The problem was caused by a syntax error that I deliberately added to the Nginx configuration file during the test. When I ran the configuration test, Nginx detected the mistake and reported that the configuration was invalid.
 
 ---
 
 **2. How did you fix the issue?**
 
-The invalid configuration was corrected, then `sudo nginx -t` was run again to validate the syntax. Nginx was restarted only after the configuration test passed, and the application response was checked to confirm recovery.
+I went back to the Nginx configuration file and corrected the mistake. I then ran sudo nginx -t again to make sure the configuration was valid. Once the test passed, I restarted Nginx and checked that the application was working again.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Validate configuration changes with `sudo nginx -t` before reloading or restarting Nginx. Keep a backup of the last working configuration, review changes before applying them, and verify the service and HTTP response after deployment.
+To avoid this in production, I would always test the Nginx configuration with sudo nginx -t before applying any changes. I would also keep a backup of the working configuration so that I can restore it if something goes wrong. After making changes, I would check that Nginx is running and that the application is accessible.
 
 ---
 
-# Task 7 — Web Application Failure Simulation
+# Task 7 : Web Application Failure Simulation
 
 ## Goal
 
@@ -305,25 +273,9 @@ Simulate missing deployment content and recover the application safely.
 
 ![Screenshot: Application failure verification](../screenshots/W02_A03_T07_Application_Failure_Verification.png)
 
-#### Empty web directory during failure
-
-![Screenshot: Empty web directory during failure](../screenshots/W02_A03_T07_Empty_Web_Directory.png)
-
-#### Application backup verification
-
-![Screenshot: Application backup verification](../screenshots/W02_A03_T07_Web_Application_Backup_Verification.png)
-
-#### Restoration of application files
-
-![Screenshot: Restoration of application files](../screenshots/W02_A03_T07_Application_Restoration.png)
-
 #### Application response after recovery
 
 ![Screenshot: Application response after recovery](../screenshots/W02_A03_T07_Application_Recovery_Verification.png)
-
-#### Nginx service restart after restoration
-
-![Screenshot: Nginx service restart after restoration](../screenshots/W02_A03_T07_Nginx_Service_Restart.png)
 
 ---
 
@@ -349,7 +301,7 @@ Keep verified backups of each deployment, deploy new builds into a separate rele
 
 ---
 
-# Task 8 — Security & Reliability Review
+# Task 8 : Security & Reliability Review
 
 ## Goal
 
@@ -359,91 +311,53 @@ Review and reflect on the security and reliability practices applied during this
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-SSH keys use a cryptographic key pair. The private key stays with the authorised user, while the server stores the public key. This avoids sending a reusable password over the connection and makes unauthorised access harder, especially when the private key is protected.
+SSH key-based authentication uses a pair of keys to verify who is connecting to the server. The private key stays with the authorised user and should never be shared. This makes it more secure than sharing passwords and helps restrict SSH access to authorised users.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Every open port can expose a service to possible attack. Closing ports that are not needed reduces the server's attack surface and limits the ways an attacker could try to gain access.
+Every open port can expose a service to possible attacks. During the maintenance drill, I reviewed the listening ports using sudo ss -tulpen and checked the UFW firewall status. Only the ports needed for the server's services should be accessible. This reduces unnecessary exposure and helps protect the server.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Enabling Nginx at boot allows the web server to start automatically when the VM restarts. This helps the application return to service without someone having to log in and start Nginx manually.
+Enabling Nginx allows it to start automatically whenever the server reboots. This helps the application become available again without someone having to log in and start the service manually. During the drill, I checked its enablement status using systemctl is-enabled nginx.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Anyone who obtains exposed credentials or private keys may be able to access servers, databases, or cloud accounts. This can lead to data theft, service disruption, unauthorised changes, and unexpected costs. Secrets should be kept out of public repositories and rotated immediately if exposed.
+Sharing passwords, private keys, or other credentials publicly can allow unauthorised people to access servers and cloud resources. This could lead to data being exposed, services being disrupted, or unexpected cloud charges. During the drill, I made sure not to expose sensitive information in my screenshots or documentation.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Unused cloud resources can continue generating charges and may leave unnecessary services or access paths running. Stop or terminate resources according to the lab requirements, and confirm that important data and evidence have been saved first.
+Cloud resources can continue generating charges even when they are no longer being used. Leaving unnecessary resources running can also create avoidable security risks. Once a lab is complete, I should save the required evidence, check that important data is backed up, and stop or terminate resources according to the lab requirements.
+
+
 # LinkedIn Post (Required)
 
 ## Evidence
 
-#### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+**LinkedIn Post:** [View my LinkedIn post](https://www.linkedin.com/posts/samkeliso-dube03_aws-devops-cloudengineering-activity-7420524921073594368-fCza)
 
 ---
 
-#### Screenshot — Published LinkedIn post
+## 🎯 Conclusion
 
-Add your screenshot here.
+This assignment gave me practical experience carrying out production maintenance checks on an Ubuntu server running a React application with Nginx. I learned how to check service health, inspect logs, monitor system resources, verify application files, and troubleshoot configuration problems.
 
----
+Through the failure simulations, I also gained a better understanding of the importance of keeping backups, validating configurations before restarting services, and checking that an application is working again after recovery. The security review helped me appreciate the importance of controlling server access, monitoring open ports, and protecting sensitive information.
 
-# Submission Instructions
-
-- Add all required screenshots in your submission
-- Full name must be visible in required screenshots
-- Do not expose sensitive information (keys, passwords, account IDs)
+Going forward, I want to continue practising these maintenance and troubleshooting skills so that I can become more confident in handling real production environments.
 
 ---
 
-# Completion Checklist
-
-- [ ] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
-- [ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
-- [ ] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
-- [ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
-- [ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
-- [ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
-- [ ] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
-- [ ] Task 8: Security & Reliability Notes answered
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
-
----
-
-## 📌 About DMI & CloudAdvisory
-
-DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
-
-It helps learners build strong DevOps foundations with hands-on experience.
-
----
-
-## 📌 Resources
-
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
-- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
-
----
-
-*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+**Author:** Samkeliso Dube  
+**Role:** DevOps Engineer | Cloud Engineer  
+**GitHub:** [Samkeliso-Dube](https://github.com/Samkeliso-dube00)  
+**LinkedIn:** [Samkeliso Dube](https://www.linkedin.com/in/samkeliso-dube03/)
