@@ -165,27 +165,64 @@ The response contained `HTTP/1.1 200 OK`. This confirms that Nginx returned a su
 
 ---
 
-# LinkedIn Post
+## 📌 About DMI & CloudAdvisory
 
-I shared the deployment as part of documenting my practical DevOps learning. The post is available here:
+DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory), focused on practical execution, systems thinking, and career readiness.
 
-**Published LinkedIn post:** [Deploying a portfolio website using AWS EC2 and Nginx](https://www.linkedin.com/posts/samkeliso-dube03_devops-aws-nginx-activity-7420453917274103808--AT9)
+## 📌 Resources
 
-**Post evidence screenshot:** Not yet added to the repository. I still need to save a screenshot of the published post in the screenshots folder and embed it here.
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWazFgBljBJn82yruDlPYI5eQTyv705bh4
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+
+---
+
+# LinkedIn Evidence
+
+I shared this deployment on LinkedIn to document the practical work and the lessons I picked up while deploying a static website with Nginx on an AWS EC2 instance.
+
+**Published post:** [Deploying a portfolio website using AWS EC2 and Nginx](https://www.linkedin.com/posts/samkeliso-dube03_devops-aws-nginx-activity-7420453917274103808--AT9)
+
+---
+
+# Submission Summary
+
+The deployment procedure is documented above, with the nine task screenshots stored in the repository's `screenshots/` directory and embedded under their corresponding tasks. The LinkedIn post URL is also included above.
+
+## Completion Checklist
+
+- [x] Screenshot 0: Nginx service status shows active/running
+- [x] Screenshot 1: Website source code downloaded and extracted
+- [x] Screenshot 2: Ownership footer edited in Nano
+- [x] Screenshot 3: Nginx configuration test successful
+- [x] Screenshot 4: Website files present in `/var/www/html`
+- [x] Screenshot 5: Public IP retrieved
+- [x] Screenshot 6: Live website opened in the browser
+- [x] Screenshot 7: Nginx enabled at boot
+- [x] Screenshot 8: Local HTTP response returns 200 OK
+- [x] LinkedIn post published and URL included
+- [ ] Ownership footer includes the deployment date
 
 ---
 
 # Reflection
 
-This assignment helped me understand that deploying a website is more than copying files into a web directory. I had to check the state of the server first, understand where Nginx serves files from, prepare the document root, and verify the result after deployment.
+This assignment gave me practical experience with the steps involved in putting a website online using Nginx. I started by checking the server and the Nginx service, then downloaded and extracted the website files before preparing the web root and deploying the content.
 
-One useful lesson was the importance of checking before changing things. In this case, the original `/var/www/html` directory was no longer present, so I had to recreate it before copying the website. I also used different checks for different parts of the deployment: `nginx -t` validated the Nginx configuration, the directory listing confirmed that the website files were in place, and `curl` confirmed that the web server returned a successful HTTP response.
+One thing that stood out was the importance of inspecting the environment before making changes. The original `/var/www/html` directory was not present, so I recreated it before copying the website files. I also learned to use different checks for different purposes: `nginx -t` validates the configuration, a directory listing confirms that the files are in the expected location, and `curl` helps verify the HTTP response.
 
-I also learned that a local HTTP 200 response and a website loading in a browser are different pieces of evidence. Both are useful because they test the service from different points of view. In future deployments, I want to be more deliberate about documenting every change and checking the final ownership details before taking screenshots.
+The exercise also reminded me not to treat one successful check as proof of everything. A local HTTP 200 response confirms that Nginx can respond locally, while opening the public IP in a browser checks access from outside the instance. In future deployments, I want to keep improving how I document changes and capture evidence, especially when personalising a site before making it publicly accessible.
 
 # Conclusion
 
-I successfully deployed the portfolio website to an Ubuntu EC2 instance using Nginx. The evidence shows that Nginx was running, the website files were present in the document root, the configuration test passed, the site loaded through the public IP address, and a local HTTP request returned `200 OK`. Nginx was also enabled to start automatically at boot.
+I deployed the portfolio website on an Ubuntu EC2 instance and served it through Nginx. The evidence included in this assignment shows that the Nginx service was running, the website files were placed in the document root, the Nginx configuration test passed, the website loaded through the instance's public IP address, and a local HTTP request returned `200 OK`. Nginx was also enabled to start automatically at boot.
 
-There are still two submission details to finish: adding the date to the ownership footer and capturing the LinkedIn post screenshot. Once those are added, the assignment evidence will be more complete and will satisfy the remaining requirements.
+The deployment and its verification steps are documented with the corresponding screenshots, and the LinkedIn post is linked as evidence of sharing the work. The remaining improvement is to add the deployment date to the website's ownership footer and update its relevant evidence.
 
+---
+
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
