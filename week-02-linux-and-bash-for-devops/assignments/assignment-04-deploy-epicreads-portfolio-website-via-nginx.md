@@ -6,7 +6,9 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ## Purpose
 
-In this assignment, you will deploy a static portfolio website on an Ubuntu VM using Nginx. You will download the website template, add your ownership proof in the footer, deploy the files to the Nginx web root, and verify the website is publicly accessible via a browser.
+In this assignment, I deployed the provided portfolio website on an Ubuntu EC2 instance using Nginx. I downloaded and extracted the source code, added my ownership details to the footer, copied the website into the Nginx document root, and checked that the site was responding over HTTP.
+
+The screenshots below show the work carried out and the results I observed on the server.
 
 ---
 
@@ -14,13 +16,21 @@ In this assignment, you will deploy a static portfolio website on an Ubuntu VM u
 
 ## Goal
 
-Verify the Ubuntu VM and Nginx are ready for deployment.
+Verify that the Ubuntu instance and Nginx are ready before deploying the website.
+
+I checked the Nginx service with:
+
+```bash
+sudo systemctl status nginx --no-pager
+```
+
+The service was active and running. The output also showed that Nginx was enabled, meaning it is configured to start automatically when the instance boots.
 
 ### Evidence
 
-#### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
+#### Screenshot 0 — Nginx service status
 
-Add your screenshot here.
+![Nginx service status showing active and running](../screenshots/W02_A04_T00_Nginx_Status.png)
 
 ---
 
@@ -30,11 +40,19 @@ Add your screenshot here.
 
 Download and extract the portfolio website template.
 
+I downloaded the template archive as `site.zip` and extracted it in the Ubuntu user's home directory. I then used `ls -la` to check the contents of the directory.
+
+The extracted project folder was:
+
+`Pravin-Mishra-Portfolio-main`
+
+The listing also showed the downloaded `site.zip` archive, confirming that the source files were available before customisation.
+
 ### Evidence
 
-#### Screenshot 1 — Output of `ls -la` showing the extracted project folder
+#### Screenshot 1 — Extracted project folder
 
-Add your screenshot here.
+![Extracted portfolio project folder and site.zip](../screenshots/W02_A04_T01_Extracted_Project.png)
 
 ---
 
@@ -42,13 +60,22 @@ Add your screenshot here.
 
 ## Goal
 
-Update the website footer with your deployment details.
+Personalise the website footer so that it identifies my deployment.
+
+I opened the website's `index.html` file in Nano and added the ownership information to the footer. The captured footer shows:
+
+- DMI Cohort 2
+- Samkeliso Dube
+- Group 2
+- Week 3
+
+The screenshot confirms that the footer was edited in Nano. One detail is still outstanding: the date is not included in the displayed footer yet. I need to add the date and capture updated evidence to fully meet this requirement.
 
 ### Evidence
 
-#### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
+#### Screenshot 2 — Ownership footer in Nano
 
-Add your screenshot here.
+![Nano editor showing the personalised ownership footer](../screenshots/W02_A04_T02_Ownership_Footer.png)
 
 ---
 
@@ -56,19 +83,25 @@ Add your screenshot here.
 
 ## Goal
 
-Deploy the portfolio website to the Nginx web root.
+Copy the customised website files into Nginx's document root and check the deployment.
+
+I inspected the Nginx web root before copying the site. The original `/var/www/html` directory had been removed, so I recreated it before deploying the files.
+
+I copied the contents of `Pravin-Mishra-Portfolio-main` into `/var/www/html/`, set the ownership to `www-data:www-data`, and applied the required permissions.
+
+I then ran `sudo nginx -t`. Nginx reported that the configuration syntax was OK and that the configuration test was successful.
+
+The final directory listing showed the deployed website content, including `index.html`, `style.css`, the images directory, and the other HTML files. The listing also showed the deployed files owned by `www-data`.
 
 ### Evidence
 
-#### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
+#### Screenshot 3 — Successful Nginx configuration test
 
-Add your screenshot here.
+![Nginx configuration syntax check completed successfully](../screenshots/W02_A04_T03_Nginx_Config_Test.png)
 
----
+#### Screenshot 4 — Website files in the Nginx web root
 
-#### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
-
-Add your screenshot here.
+![Deployed website files in /var/www/html](../screenshots/W02_A04_T03_Deployed_Website_Files.png)
 
 ---
 
@@ -76,19 +109,25 @@ Add your screenshot here.
 
 ## Goal
 
-Verify the deployed website is publicly accessible and the footer contains your details.
+Check that the website can be reached through the EC2 instance's public IP address and that the personalised footer is displayed.
+
+I used `curl ifconfig.me` to check the public IP address seen by an external service. The command returned:
+
+`3.90.243.189`
+
+I then used that address to test the website over HTTP. The terminal returned `HTTP/1.1 200 OK`. I also opened the address in a browser and confirmed that the portfolio website loaded.
+
+The browser screenshot shows the site and the ownership details in the footer. The date still needs to be added to the footer, as noted in Task 2.
 
 ### Evidence
 
-#### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
+#### Screenshot 5 — Public IP check
 
-Add your screenshot here.
+![Terminal showing the public IP address returned by ifconfig.me](../screenshots/W02_A04_T04_Public_IP.png)
 
----
+#### Screenshot 6 — Live portfolio website
 
-#### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
-
-Add your screenshot here.
+![Portfolio website loaded in the browser with the ownership footer visible](../screenshots/W02_A04_T04_Live_Website.png)
 
 ---
 
@@ -96,63 +135,66 @@ Add your screenshot here.
 
 ## Goal
 
-Verify the deployed website and Nginx service are healthy.
+Carry out a couple of basic checks to confirm that Nginx is enabled at boot and responds to local HTTP requests.
+
+I ran:
+
+```bash
+systemctl is-enabled nginx
+```
+
+The output was `enabled`, confirming that Nginx is configured to start automatically during system boot.
+
+I then tested the local HTTP endpoint using:
+
+```bash
+curl -I http://localhost
+```
+
+The response contained `HTTP/1.1 200 OK`. This confirms that Nginx returned a successful HTTP response to a request made from the EC2 instance itself.
 
 ### Evidence
 
-#### Screenshot 7 — Output of `systemctl is-enabled nginx`
+#### Screenshot 7 — Nginx enabled status
 
-Add your screenshot here.
+![systemctl is-enabled nginx returning enabled](../screenshots/W02_A04_T05_Nginx_Enabled.png)
 
----
+#### Screenshot 8 — Local HTTP response
 
-#### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
-
-Add your screenshot here.
+![curl request to localhost returning HTTP 200 OK](../screenshots/W02_A04_T05_HTTP_200_OK.png)
 
 ---
 
 # LinkedIn Post (Mandatory)
 
-## Evidence
+I still need to publish the LinkedIn post and add its URL and screenshot here.
 
-#### LinkedIn Post URL
+**LinkedIn Post URL:** Pending
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+**Evidence:** Pending — add a screenshot of the published post showing the live website and the ownership footer.
 
 ---
 
-#### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
+# Submission Summary
 
-Add your screenshot here.
+The server-side deployment checks and the nine required screenshots for Tasks 0–5 are included above. The following items still need attention before I can consider the submission complete:
 
----
+- Add the date to the website ownership footer and replace Screenshots 2 and 6 with updated evidence.
+- Publish the LinkedIn post and add its URL and screenshot.
 
-# Submission Instructions
+## Completion Checklist
 
-- Add all required screenshots in your submission
-- Full name must be visible in required screenshots
-- Ownership proof in the footer is mandatory
-- Do not expose sensitive information (keys, passwords, account IDs)
-
----
-
-# Completion Checklist
-
-- [ ] Screenshot 0: Nginx service status (active/running)
-- [ ] Screenshot 1: Website files downloaded and extracted
-- [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
-- [ ] Screenshot 3: Nginx configuration test successful
-- [ ] Screenshot 4: Website files deployed to /var/www/html
-- [ ] Screenshot 5: Public IP retrieved
-- [ ] Screenshot 6: Live website accessible in browser with footer details
-- [ ] Screenshot 7: Nginx enabled on boot
-- [ ] Screenshot 8: Local HTTP response returns 200 OK
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [x] Screenshot 0: Nginx service status shows active/running
+- [x] Screenshot 1: Website source code downloaded and extracted
+- [x] Screenshot 2: Nano screenshot captured showing the ownership footer (date still needs to be added)
+- [x] Screenshot 3: Nginx configuration test successful
+- [x] Screenshot 4: Website files present in `/var/www/html`
+- [x] Screenshot 5: Public IP retrieved
+- [x] Screenshot 6: Live website opened in the browser (footer date still needs to be added)
+- [x] Screenshot 7: Nginx enabled at boot
+- [x] Screenshot 8: Local HTTP response returns 200 OK
+- [ ] Ownership footer includes the date
+- [ ] LinkedIn post published, with URL and screenshot added
 
 ---
 
@@ -166,12 +208,12 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
