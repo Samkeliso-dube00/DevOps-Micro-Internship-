@@ -69,7 +69,7 @@ I opened the website's `index.html` file in Nano and added the ownership informa
 - Group 2
 - Week 3
 
-The screenshot confirms that the footer was edited in Nano. One detail is still outstanding: the date is not included in the displayed footer yet. I need to add the date and capture updated evidence to fully meet this requirement.
+The screenshot confirms that the footer was edited in Nano. The date is not included in the captured footer yet, so I still need to add it and capture updated evidence to fully meet this requirement.
 
 ### Evidence
 
@@ -165,22 +165,38 @@ The response contained `HTTP/1.1 200 OK`. This confirms that Nginx returned a su
 
 ---
 
-# LinkedIn Post (Mandatory)
+# LinkedIn Post
 
-I still need to publish the LinkedIn post and add its URL and screenshot here.
+I shared the deployment as part of documenting my practical DevOps learning. The post is available here:
 
-**LinkedIn Post URL:** Pending
+**Published LinkedIn post:** [Deploying a portfolio website using AWS EC2 and Nginx](https://www.linkedin.com/posts/samkeliso-dube03_devops-aws-nginx-activity-7420453917274103808--AT9)
 
-**Evidence:** Pending — add a screenshot of the published post showing the live website and the ownership footer.
+**Post evidence screenshot:** Not yet added to the repository. I still need to save a screenshot of the published post in the screenshots folder and embed it here.
+
+---
+
+# Reflection
+
+This assignment helped me understand that deploying a website is more than copying files into a web directory. I had to check the state of the server first, understand where Nginx serves files from, prepare the document root, and verify the result after deployment.
+
+One useful lesson was the importance of checking before changing things. In this case, the original `/var/www/html` directory was no longer present, so I had to recreate it before copying the website. I also used different checks for different parts of the deployment: `nginx -t` validated the Nginx configuration, the directory listing confirmed that the website files were in place, and `curl` confirmed that the web server returned a successful HTTP response.
+
+I also learned that a local HTTP 200 response and a website loading in a browser are different pieces of evidence. Both are useful because they test the service from different points of view. In future deployments, I want to be more deliberate about documenting every change and checking the final ownership details before taking screenshots.
+
+# Conclusion
+
+I successfully deployed the portfolio website to an Ubuntu EC2 instance using Nginx. The evidence shows that Nginx was running, the website files were present in the document root, the configuration test passed, the site loaded through the public IP address, and a local HTTP request returned `200 OK`. Nginx was also enabled to start automatically at boot.
+
+There are still two submission details to finish: adding the date to the ownership footer and capturing the LinkedIn post screenshot. Once those are added, the assignment evidence will be more complete and will satisfy the remaining requirements.
 
 ---
 
 # Submission Summary
 
-The server-side deployment checks and the nine required screenshots for Tasks 0–5 are included above. The following items still need attention before I can consider the submission complete:
+The deployment procedure and its nine task screenshots are included above. The LinkedIn post URL has also been added. The following evidence items still need attention before the submission is fully complete:
 
 - Add the date to the website ownership footer and replace Screenshots 2 and 6 with updated evidence.
-- Publish the LinkedIn post and add its URL and screenshot.
+- Save the published LinkedIn post screenshot in the repository and embed it in the LinkedIn section above.
 
 ## Completion Checklist
 
@@ -193,8 +209,9 @@ The server-side deployment checks and the nine required screenshots for Tasks 0�
 - [x] Screenshot 6: Live website opened in the browser (footer date still needs to be added)
 - [x] Screenshot 7: Nginx enabled at boot
 - [x] Screenshot 8: Local HTTP response returns 200 OK
+- [x] LinkedIn post published and URL added
 - [ ] Ownership footer includes the date
-- [ ] LinkedIn post published, with URL and screenshot added
+- [ ] LinkedIn post screenshot saved and embedded
 
 ---
 
@@ -210,7 +227,7 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 - 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
 - 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWazFgBljBJn82yruDlPYI5eQTyv705bh4
 - 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
 - ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
 - 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
