@@ -69,13 +69,9 @@ A visual record of the topics in my DevOps Micro Internship learning path. Each 
 
 Unlock a weekly badge after completing that module. To display it in this section, remove the `<!--` and `-->` comment markers around its badge line. The badge preview above shows the complete learning path.
 
-**Week 00 → Internet & Networking**
+<p><strong>Week 00 → Internet &amp; Networking</strong> <a href="./week-00-internet-and-networking/"><img src="./badges/week-00.svg" alt="Week 00 – Internet & Networking" width="64" /></a></p>
 
-<!-- [![Week 00 – Internet & Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
-
-**Week 01 → Success Mindset**
-
-<!-- [![Week 01 – Success Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+<p><strong>Week 01 → Success Mindset</strong> <a href="./week-01-success-mindset/"><img src="./badges/week-01.svg" alt="Week 01 – Success Mindset" width="64" /></a></p>
 
 **Week 02 → Linux & Bash**
 
