@@ -95,8 +95,8 @@ I update this tracker as I work through each module and publish assignment evide
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |:---:|---|:---:|:---:|:---:|:---:|
-| 00 | Internet & Networking | — | — | — | — |
-| 01 | Success Mindset | — | — | — | — |
+| 00 | Internet & Networking | — | — | [Week 00 LinkedIn Post](https://lnkd.in/p/dQXUDCeZ) | — |
+| 01 | Success Mindset | — | — | [Mindset Article Post](https://www.linkedin.com/posts/samkeliso-dube03_devops-cloudengineering-identity2abr0-activity-7417449433824481281-6Nw3) · [Week 01 Reflection](https://www.linkedin.com/posts/samkeliso-dube03_devops-dmi-systemsthinking-activity-7417528085660663808-JM9q) | [Medium Article: The Architect of Resilience](https://medium.com/@lainnecoatzee/the-architect-of-resilience-my-version-2-0-779a24aa1a05) |
 | 02 | Linux & Bash | — | — | — | — |
 | 03 | Git & GitHub | — | — | — | — |
 | 04 | DevOps Lifecycle | — | — | — | — |
