@@ -67,55 +67,23 @@ A visual record of the topics in my DevOps Micro Internship learning path. Each 
 
 ## 🗂️ Your Stack
 
-Unlock a weekly badge after completing that module. To display it in this section, remove the `<!--` and `-->` comment markers around its badge line. The badge preview above shows the complete learning path.
+Unlock a weekly badge after completing that module. The badge column shows the badges you have chosen to display.
 
-<p><strong>Week 00 → Internet &amp; Networking</strong> <a href="./week-00-internet-and-networking/"><img src="./badges/week-00.svg" alt="Week 00 – Internet & Networking" width="64" /></a></p>
-
-<p><strong>Week 01 → Success Mindset</strong> <a href="./week-01-success-mindset/"><img src="./badges/week-01.svg" alt="Week 01 – Success Mindset" width="64" /></a></p>
-
-**Week 02 → Linux & Bash**
-
-<!-- [![Week 02 – Linux & Bash](./badges/week-02.svg)](./week-02-linux-and-bash-for-devops/) -->
-
-**Week 03 → Git & GitHub**
-
-<!-- [![Week 03 – Git & GitHub](./badges/week-03.svg)](./week-04-git-and-github/) -->
-
-**Week 04 → DevOps Lifecycle**
-
-<!-- [![Week 04 – DevOps Lifecycle](./badges/week-04.svg)](./week-05-devops-lifecycle/) -->
-
-**Week 05 → AWS Cloud**
-
-<!-- [![Week 05 – AWS Cloud](./badges/week-05.svg)](./week-06-aws-cloud/) -->
-
-**Week 06 → Azure Cloud**
-
-<!-- [![Week 06 – Azure Cloud](./badges/week-06.svg)](./week-07-azure-cloud/) -->
-
-**Week 07 → Terraform**
-
-<!-- [![Week 07 – Terraform](./badges/week-07.svg)](./week-08-terraform/) -->
-
-**Week 08 → Ansible**
-
-<!-- [![Week 08 – Ansible](./badges/week-08.svg)](./week-09-ansible/) -->
-
-**Week 09 → Azure DevOps**
-
-<!-- [![Week 09 – Azure DevOps](./badges/week-09.svg)](./week-10-azure-devops/) -->
-
-**Week 10 → Docker**
-
-<!-- [![Week 10 – Docker](./badges/week-10.svg)](./week-11-docker/) -->
-
-**Week 11 → Kubernetes**
-
-<!-- [![Week 11 – Kubernetes](./badges/week-11.svg)](./week-12-kubernetes/) -->
-
-**Week 12 → Final Project**
-
-<!-- [![Week 12 – Final Project](./badges/week-12.svg)](./week-13-final-project/) -->
+| Week | Topic | Badge |
+|:---:|---|:---:|
+| 00 | Internet & Networking | <a href="./week-00-internet-and-networking/"><img src="./badges/week-00.svg" alt="Week 00 – Internet & Networking" width="64" /></a> |
+| 01 | Success Mindset | <a href="./week-01-success-mindset/"><img src="./badges/week-01.svg" alt="Week 01 – Success Mindset" width="64" /></a> |
+| 02 | Linux & Bash | <!-- [![Week 02 – Linux & Bash](./badges/week-02.svg)](./week-02-linux-and-bash-for-devops/) --> |
+| 03 | Git & GitHub | <!-- [![Week 03 – Git & GitHub](./badges/week-03.svg)](./week-04-git-and-github/) --> |
+| 04 | DevOps Lifecycle | <!-- [![Week 04 – DevOps Lifecycle](./badges/week-04.svg)](./week-05-devops-lifecycle/) --> |
+| 05 | AWS Cloud | <!-- [![Week 05 – AWS Cloud](./badges/week-05.svg)](./week-06-aws-cloud/) --> |
+| 06 | Azure Cloud | <!-- [![Week 06 – Azure Cloud](./badges/week-06.svg)](./week-07-azure-cloud/) --> |
+| 07 | Terraform | <!-- [![Week 07 – Terraform](./badges/week-07.svg)](./week-08-terraform/) --> |
+| 08 | Ansible | <!-- [![Week 08 – Ansible](./badges/week-08.svg)](./week-09-ansible/) --> |
+| 09 | Azure DevOps | <!-- [![Week 09 – Azure DevOps](./badges/week-09.svg)](./week-10-azure-devops/) --> |
+| 10 | Docker | <!-- [![Week 10 – Docker](./badges/week-10.svg)](./week-11-docker/) --> |
+| 11 | Kubernetes | <!-- [![Week 11 – Kubernetes](./badges/week-11.svg)](./week-12-kubernetes/) --> |
+| 12 | Final Project | <!-- [![Week 12 – Final Project](./badges/week-12.svg)](./week-13-final-project/) --> |
 
 ---
 
