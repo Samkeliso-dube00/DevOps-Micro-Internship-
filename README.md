@@ -115,7 +115,15 @@ I update this tracker as I work through each module and publish assignment evide
 
 ## 🏆 Achievements & Milestones
 
-A collection of milestones reached throughout my DevOps learning journey.
+A collection of recognitions and milestones reached throughout my DevOps learning journey.
+
+### 🏅 Champion of the Week
+
+| Week | Recognition | LinkedIn Post |
+|:---:|---|---|
+| 02 | 🏆 Champion of the Week | — |
+
+### 🎯 Learning Milestones
 
 - [x] 🚀 Started the DevOps Micro Internship (DMI).
 - [x] 📦 Created and organised my GitHub learning repository.
