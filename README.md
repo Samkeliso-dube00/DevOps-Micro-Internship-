@@ -133,16 +133,6 @@ I update this tracker as I work through each module and publish assignment evide
 
 ---
 
-## 🪦 The Bug Graveyard
-
-> Every error I encounter is an opportunity to learn. I record the problem, identify the root cause, and document the fix.
-
-| Week | What broke | Root cause | The fix |
-|:---:|---|---|---|
-| 00 | Add an actual issue | Identify the cause | Document the solution |
-| 03 | Add an actual issue | Identify the cause | Document the solution |
-| 04 | Add an actual issue | Identify the cause | Document the solution |
-
 ---
 
 ## 🏆 Achievements & Milestones
