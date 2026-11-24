@@ -1,19 +1,8 @@
-## 📌 About This Repository
+# DevOps Micro Internship
 
-This repository is a rebuild of my original DevOps Micro-Internship (DMI), which I have now completed.
-
-The LinkedIn posts linked throughout this repository are my original posts, published while I was undertaking the internship. The step-by-step documentation and walkthroughs, however, were created during the rebuild to provide a clearer record of the practical work.
-
-As a result, some implementation details, screenshots, or presentation may differ from the original LinkedIn posts. This is expected. The walkthroughs accurately document the rebuilt work and the steps followed.
-
-The repository brings together my learning journey, practical exercises, troubleshooting, and technical documentation in one place.
-
- 
 <div align="center">
 
-  <img src="https://img.shields.io/badge/🚀_DEVOPS-MICRO_INTERNSHIP-6C63FF?style=for-the-badge&labelColor=161B22" alt="DevOps Micro Internship" />
-
-  <p>
+<p>
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00D4AA&center=true&vCenter=true&width=700&height=40&lines=%24+learn+--by-doing;%24+break+things+%7C%7C+fix+things+%7C%7C+document+it;%24+from+zero+to+deployed;%24+14+weeks.+1+portfolio.+No+shortcuts" alt="Learning journey typing animation" />
   </p>
 
@@ -42,13 +31,28 @@ I studied Cloud Engineering at **AltSchool Africa**, where I developed a foundat
 
 I'm using this repository to document my practical learning journey through the **DevOps Micro Internship (DMI)**. It brings together hands-on assignments, technical notes, deployment projects, troubleshooting experiences, and lessons learned.
 
-### 🎯 My Approach
+---
+
+## 📌 About This Repository
+
+This repository is a rebuild of my original DevOps Micro-Internship (DMI), which I have now completed.
+
+The LinkedIn posts linked throughout this repository are my original posts, published while I was undertaking the internship. The step-by-step documentation and walkthroughs, however, were created during the rebuild to provide a clearer record of the practical work.
+
+As a result, some implementation details, screenshots, or presentation may differ from the original LinkedIn posts. This is expected. The walkthroughs accurately document the rebuilt work and the steps followed.
+
+The repository brings together my learning journey, practical exercises, troubleshooting, and technical documentation in one place.
+
+---
+
+## 🎯 My Approach
 
 - 📚 Learn the fundamentals.
 - 🛠️ Apply knowledge through hands-on practice.
 - 🔍 Troubleshoot problems and understand their causes.
 - 📝 Document the process and lessons learned.
 - 🚀 Keep improving through continuous practice.
+
 ---
 
 ## 🧰 My DevOps Stack
