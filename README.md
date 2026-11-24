@@ -1,3 +1,13 @@
+## 📌 About This Repository
+
+This repository is a rebuild of my original DevOps Micro-Internship (DMI), which I have now completed.
+
+The LinkedIn posts linked throughout this repository are my original posts, published while I was undertaking the internship. The step-by-step documentation and walkthroughs, however, were created during the rebuild to provide a clearer record of the practical work.
+
+As a result, some implementation details, screenshots, or presentation may differ from the original LinkedIn posts. This is expected. The walkthroughs accurately document the rebuilt work and the steps followed.
+
+The repository brings together my learning journey, practical exercises, troubleshooting, and technical documentation in one place.
+
  
 <div align="center">
 
