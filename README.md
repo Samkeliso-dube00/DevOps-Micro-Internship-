@@ -71,8 +71,8 @@ Unlock a weekly badge after completing that module. The badge column shows the b
 
 | Week | Topic | Badge |
 |:---:|---|:---:|
-| 00 | Internet & Networking | <a href="./week-00-internet-and-networking/"><img src="./badges/week-00.svg" alt="Week 00 – Internet & Networking" width="64" /></a> |
-| 01 | Success Mindset | <a href="./week-01-success-mindset/"><img src="./badges/week-01.svg" alt="Week 01 – Success Mindset" width="64" /></a> |
+| 00 | Internet & Networking | <a href="./week-00-internet-and-networking/"><img src="./badges/week-00.svg" alt="Week 00 – Internet & Networking" width="48" /></a> |
+| 01 | Success Mindset | <a href="./week-01-success-mindset/"><img src="./badges/week-01.svg" alt="Week 01 – Success Mindset" width="48" /></a> |
 | 02 | Linux & Bash | <!-- [![Week 02 – Linux & Bash](./badges/week-02.svg)](./week-02-linux-and-bash-for-devops/) --> |
 | 03 | Git & GitHub | <!-- [![Week 03 – Git & GitHub](./badges/week-03.svg)](./week-04-git-and-github/) --> |
 | 04 | DevOps Lifecycle | <!-- [![Week 04 – DevOps Lifecycle](./badges/week-04.svg)](./week-05-devops-lifecycle/) --> |
