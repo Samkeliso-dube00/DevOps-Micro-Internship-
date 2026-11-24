@@ -1,4 +1,4 @@
-# DevOps Micro Internship
+<h1 align="center">DevOps Micro Internship</h1>
 
 <div align="center">
 
