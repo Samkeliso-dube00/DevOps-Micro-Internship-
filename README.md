@@ -41,57 +41,73 @@ I'm using this repository to document my practical learning journey through the 
 - 🚀 Keep improving through continuous practice.
 ---
 
-## 🎛️ Mission Control
+## 🧰 My DevOps Stack
 
-> My learning progress dashboard. I update it as I go.
+A visual overview of the topics covered throughout my DevOps learning journey.
 
-**Legend:** ✅ Complete | 🔥 In progress | 🔒 Not started
+<p align="left">
 
-```text
-OVERALL PROGRESS   ▰▰▱▱▱▱▱▱▱▱▱▱▱▱   2 / 14 modules started
-```
+<a href="week-00-internet-and-networking/"><img src="https://img.shields.io/badge/Week_00-Internet_%26_Networking-0A66C2?style=for-the-badge" alt="Week 00 - Internet & Networking" /></a>
+<a href="week-01-success-mindset/"><img src="https://img.shields.io/badge/Week_01-Success_Mindset-0A66C2?style=for-the-badge" alt="Week 01 - Success Mindset" /></a>
+<a href="week-02-linux-and-bash-for-devops/"><img src="https://img.shields.io/badge/Week_02-Linux_%26_Bash-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Week 02 - Linux & Bash" /></a>
+<a href="week-04-git-and-github/"><img src="https://img.shields.io/badge/Week_03-Git_%26_GitHub-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Week 03 - Git & GitHub" /></a>
+<a href="week-05-devops-lifecycle/"><img src="https://img.shields.io/badge/Week_04-DevOps_Lifecycle-6C63FF?style=for-the-badge" alt="Week 04 - DevOps Lifecycle" /></a>
+<a href="week-06-aws-cloud/"><img src="https://img.shields.io/badge/Week_05-AWS_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Week 05 - AWS Cloud" /></a>
+<a href="week-07-azure-cloud/"><img src="https://img.shields.io/badge/Week_06-Azure_Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Week 06 - Azure Cloud" /></a>
+<a href="week-08-terraform/"><img src="https://img.shields.io/badge/Week_07-Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Week 07 - Terraform" /></a>
+<a href="week-09-ansible/"><img src="https://img.shields.io/badge/Week_08-Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Week 08 - Ansible" /></a>
+<a href="week-10-azure-devops/"><img src="https://img.shields.io/badge/Week_09-Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white" alt="Week 09 - Azure DevOps" /></a>
+<a href="week-11-docker/"><img src="https://img.shields.io/badge/Week_10-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Week 10 - Docker" /></a>
+<a href="week-12-kubernetes/"><img src="https://img.shields.io/badge/Week_11-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Week 11 - Kubernetes" /></a>
+<a href="week-13-final-project/"><img src="https://img.shields.io/badge/Week_12-Final_Project-2E8B57?style=for-the-badge" alt="Week 12 - Final Project" /></a>
 
-| Level | Week | Mission | Status | Progress |
-|:---:|:---:|---|:---:|:---:|
-| 🌐 | 00 | **Internet & Networking Basics** | 🔥 | `▰▰▰▰▰▰▰▰▰▰` |
-| 🧠 | 01 | **Success Mindset** | ✅ | `▰▰▰▰▰▰▰▰▰▰` |
-| 🤖 | 02 | **Agentic AI** | 🔒 | `▰▰▰▱▱▱▱▱▱▱` |
-| 🐧 | 03 | **Linux & Bash for DevOps** | 🔥 | `▰▰▰▱▱▱▱▱▱▱` |
-| 🌿 | 04 | **Git & GitHub** | 🔒 | `▰▰▰▱▱▱▱▱▱▱` |
-| ♾️ | 05 | **DevOps Lifecycle** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| ☁️ | 06 | **AWS Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| 🔷 | 07 | **Azure Cloud** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| 🏗️ | 08 | **Terraform** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| ⚙️ | 09 | **Ansible** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| 🚦 | 10 | **Azure DevOps** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| 🐳 | 11 | **Docker** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| ☸️ | 12 | **Kubernetes** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
-| 👑 | 13 | **Final Project** | 🔒 | `▱▱▱▱▱▱▱▱▱▱` |
+</p>
 
 ---
 
-## 📂 Repository Structure
+## 🗂️ Your Stack
 
-The repository is organised by the DMI learning modules. Additional topics that are not part of the core DMI curriculum are kept separately under `additional-learning/`.
+The weekly learning path, with each badge linking to its corresponding module.
 
-```text
-DevOps-Micro-Internship/
-├── additional-learning/
-│   └── agentic-ai/
-├── week-00-internet-and-networking/
-├── week-01-success-mindset/
-├── week-03-linux-and-bash-for-devops/
-├── week-04-git-and-github/
-├── week-05-devops-lifecycle/
-├── week-06-aws-cloud/
-├── week-07-azure-cloud/
-├── week-08-terraform/
-├── week-09-ansible/
-├── week-10-azure-devops/
-├── week-11-docker/
-├── week-12-kubernetes/
-└── week-13-final-project/
-```
+| Week | Topic | Module |
+|:---:|---|:---:|
+| 00 | Internet & Networking | [Open module](./week-00-internet-and-networking/) |
+| 01 | Success Mindset | [Open module](./week-01-success-mindset/) |
+| 02 | Linux & Bash | [Open module](./week-02-linux-and-bash-for-devops/) |
+| 03 | Git & GitHub | [Open module](./week-04-git-and-github/) |
+| 04 | DevOps Lifecycle | [Open module](./week-05-devops-lifecycle/) |
+| 05 | AWS Cloud | [Open module](./week-06-aws-cloud/) |
+| 06 | Azure Cloud | [Open module](./week-07-azure-cloud/) |
+| 07 | Terraform | [Open module](./week-08-terraform/) |
+| 08 | Ansible | [Open module](./week-09-ansible/) |
+| 09 | Azure DevOps | [Open module](./week-10-azure-devops/) |
+| 10 | Docker | [Open module](./week-11-docker/) |
+| 11 | Kubernetes | [Open module](./week-12-kubernetes/) |
+| 12 | Final Project | [Open module](./week-13-final-project/) |
+
+---
+
+## 📅 Weekly Progress
+
+I update this tracker as I work through each module and publish assignment evidence or learning posts.
+
+**Status:** ⬜ Not Started · 🔄 In Progress · ✅ Completed
+
+| Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
+|:---:|---|:---:|:---:|:---:|:---:|
+| 00 | Internet & Networking | — | — | — | — |
+| 01 | Success Mindset | — | — | — | — |
+| 02 | Linux & Bash | — | — | — | — |
+| 03 | Git & GitHub | — | — | — | — |
+| 04 | DevOps Lifecycle | — | — | — | — |
+| 05 | AWS Cloud | — | — | — | — |
+| 06 | Azure Cloud | — | — | — | — |
+| 07 | Terraform | — | — | — | — |
+| 08 | Ansible | — | — | — | — |
+| 09 | Azure DevOps | — | — | — | — |
+| 10 | Docker | — | — | — | — |
+| 11 | Kubernetes | — | — | — | — |
+| 12 | Final Project | — | — | — | — |
 
 ---
 
