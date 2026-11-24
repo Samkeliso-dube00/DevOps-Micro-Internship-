@@ -43,47 +43,69 @@ I'm using this repository to document my practical learning journey through the 
 
 ## 🧰 My DevOps Stack
 
-A visual overview of the topics covered throughout my DevOps learning journey.
+A visual record of the topics in my DevOps Micro Internship learning path. Each hexagonal badge represents one week and links to its module.
 
-<p align="left">
+**Full stack preview:**
 
-<a href="week-00-internet-and-networking/"><img src="https://img.shields.io/badge/Week_00-Internet_%26_Networking-0A66C2?style=for-the-badge" alt="Week 00 - Internet & Networking" /></a>
-<a href="week-01-success-mindset/"><img src="https://img.shields.io/badge/Week_01-Success_Mindset-0A66C2?style=for-the-badge" alt="Week 01 - Success Mindset" /></a>
-<a href="week-02-linux-and-bash-for-devops/"><img src="https://img.shields.io/badge/Week_02-Linux_%26_Bash-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Week 02 - Linux & Bash" /></a>
-<a href="week-04-git-and-github/"><img src="https://img.shields.io/badge/Week_03-Git_%26_GitHub-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Week 03 - Git & GitHub" /></a>
-<a href="week-05-devops-lifecycle/"><img src="https://img.shields.io/badge/Week_04-DevOps_Lifecycle-6C63FF?style=for-the-badge" alt="Week 04 - DevOps Lifecycle" /></a>
-<a href="week-06-aws-cloud/"><img src="https://img.shields.io/badge/Week_05-AWS_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Week 05 - AWS Cloud" /></a>
-<a href="week-07-azure-cloud/"><img src="https://img.shields.io/badge/Week_06-Azure_Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Week 06 - Azure Cloud" /></a>
-<a href="week-08-terraform/"><img src="https://img.shields.io/badge/Week_07-Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Week 07 - Terraform" /></a>
-<a href="week-09-ansible/"><img src="https://img.shields.io/badge/Week_08-Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Week 08 - Ansible" /></a>
-<a href="week-10-azure-devops/"><img src="https://img.shields.io/badge/Week_09-Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white" alt="Week 09 - Azure DevOps" /></a>
-<a href="week-11-docker/"><img src="https://img.shields.io/badge/Week_10-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Week 10 - Docker" /></a>
-<a href="week-12-kubernetes/"><img src="https://img.shields.io/badge/Week_11-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Week 11 - Kubernetes" /></a>
-<a href="week-13-final-project/"><img src="https://img.shields.io/badge/Week_12-Final_Project-2E8B57?style=for-the-badge" alt="Week 12 - Final Project" /></a>
-
-</p>
+[![Week 00](./badges/week-00.svg)](./week-00-internet-and-networking/)[![Week 01](./badges/week-01.svg)](./week-01-success-mindset/)[![Week 02](./badges/week-02.svg)](./week-02-linux-and-bash-for-devops/)[![Week 03](./badges/week-03.svg)](./week-04-git-and-github/)[![Week 04](./badges/week-04.svg)](./week-05-devops-lifecycle/)[![Week 05](./badges/week-05.svg)](./week-06-aws-cloud/)[![Week 06](./badges/week-06.svg)](./week-07-azure-cloud/)[![Week 07](./badges/week-07.svg)](./week-08-terraform/)[![Week 08](./badges/week-08.svg)](./week-09-ansible/)[![Week 09](./badges/week-09.svg)](./week-10-azure-devops/)[![Week 10](./badges/week-10.svg)](./week-11-docker/)[![Week 11](./badges/week-11.svg)](./week-12-kubernetes/)[![Week 12](./badges/week-12.svg)](./week-13-final-project/)
 
 ---
 
 ## 🗂️ Your Stack
 
-The weekly learning path, with each badge linking to its corresponding module.
+Unlock a weekly badge after completing that module. To display it in this section, remove the `<!--` and `-->` comment markers around its badge line. The badge preview above shows the complete learning path.
 
-| Week | Topic | Module |
-|:---:|---|:---:|
-| 00 | Internet & Networking | [Open module](./week-00-internet-and-networking/) |
-| 01 | Success Mindset | [Open module](./week-01-success-mindset/) |
-| 02 | Linux & Bash | [Open module](./week-02-linux-and-bash-for-devops/) |
-| 03 | Git & GitHub | [Open module](./week-04-git-and-github/) |
-| 04 | DevOps Lifecycle | [Open module](./week-05-devops-lifecycle/) |
-| 05 | AWS Cloud | [Open module](./week-06-aws-cloud/) |
-| 06 | Azure Cloud | [Open module](./week-07-azure-cloud/) |
-| 07 | Terraform | [Open module](./week-08-terraform/) |
-| 08 | Ansible | [Open module](./week-09-ansible/) |
-| 09 | Azure DevOps | [Open module](./week-10-azure-devops/) |
-| 10 | Docker | [Open module](./week-11-docker/) |
-| 11 | Kubernetes | [Open module](./week-12-kubernetes/) |
-| 12 | Final Project | [Open module](./week-13-final-project/) |
+**Week 00 → Internet & Networking**
+
+<!-- [![Week 00 – Internet & Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+
+**Week 01 → Success Mindset**
+
+<!-- [![Week 01 – Success Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+
+**Week 02 → Linux & Bash**
+
+<!-- [![Week 02 – Linux & Bash](./badges/week-02.svg)](./week-02-linux-and-bash-for-devops/) -->
+
+**Week 03 → Git & GitHub**
+
+<!-- [![Week 03 – Git & GitHub](./badges/week-03.svg)](./week-04-git-and-github/) -->
+
+**Week 04 → DevOps Lifecycle**
+
+<!-- [![Week 04 – DevOps Lifecycle](./badges/week-04.svg)](./week-05-devops-lifecycle/) -->
+
+**Week 05 → AWS Cloud**
+
+<!-- [![Week 05 – AWS Cloud](./badges/week-05.svg)](./week-06-aws-cloud/) -->
+
+**Week 06 → Azure Cloud**
+
+<!-- [![Week 06 – Azure Cloud](./badges/week-06.svg)](./week-07-azure-cloud/) -->
+
+**Week 07 → Terraform**
+
+<!-- [![Week 07 – Terraform](./badges/week-07.svg)](./week-08-terraform/) -->
+
+**Week 08 → Ansible**
+
+<!-- [![Week 08 – Ansible](./badges/week-08.svg)](./week-09-ansible/) -->
+
+**Week 09 → Azure DevOps**
+
+<!-- [![Week 09 – Azure DevOps](./badges/week-09.svg)](./week-10-azure-devops/) -->
+
+**Week 10 → Docker**
+
+<!-- [![Week 10 – Docker](./badges/week-10.svg)](./week-11-docker/) -->
+
+**Week 11 → Kubernetes**
+
+<!-- [![Week 11 – Kubernetes](./badges/week-11.svg)](./week-12-kubernetes/) -->
+
+**Week 12 → Final Project**
+
+<!-- [![Week 12 – Final Project](./badges/week-12.svg)](./week-13-final-project/) -->
 
 ---
 
