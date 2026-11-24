@@ -121,7 +121,7 @@ A collection of recognitions and milestones reached throughout my DevOps learnin
 
 | Week | Recognition | LinkedIn Post |
 |:---:|---|---|
-| 02 | 🏆 Champion of the Week | — |
+| 02 | 🏆 Champion of the Week | [View LinkedIn Achievement](https://lnkd.in/p/ddxeZGuq) |
 
 ### 🎯 Learning Milestones
 
